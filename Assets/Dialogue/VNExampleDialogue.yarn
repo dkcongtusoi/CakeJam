@@ -1,27 +1,114 @@
-title: Start
+title: Test
 tags: 
 colorID: 0
-position: 0,0
+position: -59,-84
 ---
 //set scene
 <<fadeOut>>
-<<Scene  BG_Main>>
-<<PlayAudio BG_Main 0.5 loop>>
+<<Scene  BG_Main>> //to set bg
+<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
 <<fadeIn>>
 
-//dialogue
-<<Act JACK Jack_Sprite 0 0.4 >>
+<<Act JACK Jack_Sprite 0 0.4 >> // add sprite 
+
+//Mystery Box UI
 : Crisis example
-<<BoxAnim Crisis>>
+<<BoxAnim Crisis>> 
 <<wait 2>>
 <<BoxAnim Exit>>
 : Love example
 <<BoxAnim Love>>
 <<wait 2>>
 <<BoxAnim Exit>>
+
+//Reaction UI
 : React example
 <<ReactAnim ForReal>>
 <<wait 2>>
 <<ReactAnim Exit>>
-<<Hide JACK>>
+
+//transition 
+<<fadeOut>>
+<<StopAudio BG_Main >> //stop audio
+<<Hide JACK>> //hide sprite
+===
+
+title: Start
+position: -54,86
+---
+<<fadeOut>>
+<<Scene  BG_Main>>
+<<PlayAudio BG_Main 0.5 loop>> 
+<<Act JACK Jack_Sprite 0 0.4 >>
+<<fadeIn>>
+
+
+: Welcome back to Jack's delicious game show where (add catchy line here). As always, I'm your host Jack 
+: Today we have 3 contestants including the one and only fat teddy 
+//applause
+: explain game concept briefly 
+===
+title: Mystery
+position: -51,232
+---
+//curtain transition
+: Now contestant number 2 will be going first which ingredient will he get!
+
+//different comment based on outcome + ui pop up
+//crisis
+//fear
+//love
+//souls
+
+//commercial break
+<<fadeOut>>
+===
+title: Pantry
+position: -57,391
+---
+<<fadeOut>>
+<<fadeIn>>
+//Host says random generic stuff about ingredients chosen
+===
+title: Mix
+position: -58,540
+---
+<<fadeOut>>
+<<fadeIn>>
+===
+title: Judge
+position: -54,694
+---
+<<fadeOut>>
+<<fadeIn>>
+===
+title: JackCake
+position: -47,840
+---
+<<fadeOut>>
+<<fadeIn>>
+===
+title: GhostCake
+position: -42,988
+---
+<<fadeOut>>
+<<fadeIn>>
+===
+title: MouseCake
+position: 203,987
+---
+<<fadeOut>>
+<<fadeIn>>
+===
+title: TruckCake
+position: -34,1293
+---
+<<fadeOut>>
+<<fadeIn>>
+===
+title: BurntCake
+position: -37,1138
+---
+<<fadeOut>>
+<<fadeIn>>
 ===
