@@ -1,0 +1,27 @@
+title: Start
+tags: 
+colorID: 0
+position: 0,0
+---
+//set scene
+<<fadeOut>>
+<<Scene  BG_Main>>
+<<PlayAudio BG_Main 0.5 loop>>
+<<fadeIn>>
+
+//dialogue
+<<Act JACK Jack_Sprite 0 0.4 >>
+: Crisis example
+<<BoxAnim Crisis>>
+<<wait 2>>
+<<BoxAnim Exit>>
+: Love example
+<<BoxAnim Love>>
+<<wait 2>>
+<<BoxAnim Exit>>
+: React example
+<<ReactAnim ForReal>>
+<<wait 2>>
+<<ReactAnim Exit>>
+<<Hide JACK>>
+===
