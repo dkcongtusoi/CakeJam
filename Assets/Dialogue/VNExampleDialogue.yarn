@@ -9,7 +9,7 @@ position: -59,-84
 <<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
 <<fadeIn>>
 
-<<Act JACK Jack_Sprite 0 0.4 >> // add sprite 
+<<Act JACK Jack_Sprite 0 0.2 >> // add sprite 
 
 //Mystery Box UI
 : Crisis example
@@ -39,7 +39,7 @@ position: -54,86
 <<fadeOut>>
 <<Scene  BG_Main>>
 <<PlayAudio BG_Main 0.5 loop>> 
-<<Act JACK Jack_Sprite 0 0.4 >>
+<<Act JACK Jack_Sprite 0.5 0.5 >>
 <<fadeIn>>
 
 
