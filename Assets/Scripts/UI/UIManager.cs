@@ -12,10 +12,14 @@ public class UIManager : MonoBehaviour
     public Animator HUD;
     public Animator Reaction;
     public Animator Mystery;
+    public Animator Curtain;
 
     public AudioSource genericAudioSource;
     public float SFXVolume = 0.5f;
-    public AudioClip clocktick;
+    public AudioClip ReactSFX;
+    public AudioClip MysterySFX;
+    public AudioClip CurtSFX;
+
 
 
 
@@ -25,28 +29,19 @@ public class UIManager : MonoBehaviour
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
         fadeLayer = FindObjectOfType<FadeLayer>();
 
-        dialogueRunner.AddCommandHandler<string>("HUDAnim", HUDAnim);
         dialogueRunner.AddCommandHandler<string>("ReactAnim", ReactAnim);
         dialogueRunner.AddCommandHandler<string>("BoxAnim", BoxAnim);
+        dialogueRunner.AddCommandHandler<string>("CurtAnim", CurtAnim);
 
         //<<fadeIn DURATION>> and <<fadeOut DURATION>>
         dialogueRunner.AddCommandHandler<float>("fadeIn", FadeIn);
         dialogueRunner.AddCommandHandler<float>("fadeOut", FadeOut);
 
     }
-
-    private void HUDAnim(string trigger)
-    {
-        HUD.SetTrigger(trigger);
-        genericAudioSource.clip = clocktick;
-        genericAudioSource.volume = SFXVolume;
-        genericAudioSource.Play();
-    }
-
     private void ReactAnim(string trigger)
     {
         Reaction.SetTrigger(trigger);
-        genericAudioSource.clip = clocktick;
+        genericAudioSource.clip = ReactSFX;
         genericAudioSource.volume = SFXVolume;
         genericAudioSource.Play();
     }
@@ -54,7 +49,15 @@ public class UIManager : MonoBehaviour
     private void BoxAnim(string trigger)
     {
         Mystery.SetTrigger(trigger);
-        genericAudioSource.clip = clocktick;
+        genericAudioSource.clip = MysterySFX;
+        genericAudioSource.volume = SFXVolume;
+        genericAudioSource.Play();
+    }
+
+    private void CurtAnim(string trigger)
+    {
+        Curtain.SetTrigger(trigger);
+        genericAudioSource.clip = CurtSFX;
         genericAudioSource.volume = SFXVolume;
         genericAudioSource.Play();
     }

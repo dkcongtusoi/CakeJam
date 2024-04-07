@@ -9,10 +9,13 @@ position: -59,-84
 <<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
 <<fadeIn>>
 
-<<Act JACK Jack_Sprite 1.5 0.8 >> // add sprite 
+<<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
+<<wait  2>>
+<<Move JACK 1.5 0.8 0.4>>
 
 //Mystery Box UI
-: Crisis example
+: WE'LL BE BACK AFTER THIS COMMERCIAL BREAK
+<<CurtAnim Enter>>
 <<BoxAnim Crisis>> 
 <<wait 2>>
 <<BoxAnim Exit>>
@@ -28,6 +31,7 @@ position: -59,-84
 <<ReactAnim Exit>>
 
 //transition 
+<<CurtAnim Enter>>
 <<fadeOut>>
 <<StopAudio BG_Main >> //stop audio
 <<Hide JACK>> //hide sprite
