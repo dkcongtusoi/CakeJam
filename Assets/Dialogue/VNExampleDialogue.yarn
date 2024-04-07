@@ -19,14 +19,6 @@ position: -59,-84
 <<wait  2>>
 <<CurtAnim Exit>>
 
-<<BoxAnim Crisis>> 
-<<wait 2>>
-<<BoxAnim Exit>>
-: Love example
-<<BoxAnim Love>>
-<<wait 2>>
-<<BoxAnim Exit>>
-
 //Reaction UI
 : React example
 <<ReactAnim ForReal>>
@@ -48,8 +40,6 @@ position: -54,86
 <<PlayAudio BG_Main 0.5 loop>> 
 <<Act JACK Jack_Sprite 1.5 0.8 >>
 <<fadeIn>>
-
-
 : Welcome back to Jack's delicious game show where (add catchy line here). As always, I'm your host Jack 
 : Today we have 3 contestants including the one and only fat teddy 
 //applause
@@ -60,7 +50,10 @@ position: -51,232
 ---
 : Now, contestant 2 will now be choosing his ingredient... What will he get?!
 
-<<Ingredient>>
+<<MysteryAnim Entry>>
+<<wait  12>>
+<<ConfettiAnim>>
+<<MysteryCombo>>
 
 <<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
 <<wait  1>>

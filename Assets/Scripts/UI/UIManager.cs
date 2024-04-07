@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
 
     public Animator HUD;
     public Animator Reaction;
-    public Animator Mystery;
+    //public Animator Mystery;
     public Animator Curtain;
     public Animator MysteryBox;
 
@@ -32,7 +32,7 @@ public class UIManager : MonoBehaviour
         fadeLayer = FindObjectOfType<FadeLayer>();
 
         dialogueRunner.AddCommandHandler<string>("ReactAnim", ReactAnim);
-        dialogueRunner.AddCommandHandler<string>("BoxAnim", BoxAnim);
+        //dialogueRunner.AddCommandHandler<string>("BoxAnim", BoxAnim);
         dialogueRunner.AddCommandHandler<string>("CurtAnim", CurtAnim);
 
         //<<fadeIn DURATION>> and <<fadeOut DURATION>>
@@ -67,10 +67,10 @@ public class UIManager : MonoBehaviour
         genericAudioSource.Play();
     }
 
-    private void BoxAnim(string trigger)
-    {
-        Mystery.SetTrigger(trigger);
-    }
+    //private void BoxAnim(string trigger)
+    //{
+    //    Mystery.SetTrigger(trigger);
+    //}
 
     private void CurtAnim(string trigger)
     {
