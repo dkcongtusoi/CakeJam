@@ -15,7 +15,6 @@ public class UIManager : MonoBehaviour
     public Animator Curtain;
     public Animator MysteryBox;
 
-    public GameObject CurtainBG;
     public GameObject Confetti;
 
     public AudioSource genericAudioSource;
@@ -40,26 +39,12 @@ public class UIManager : MonoBehaviour
         dialogueRunner.AddCommandHandler<float>("fadeIn", FadeIn);
         dialogueRunner.AddCommandHandler<float>("fadeOut", FadeOut);
 
-        dialogueRunner.AddCommandHandler("CurtainOn", CurtainOn);
-        dialogueRunner.AddCommandHandler("CurtainOff", CurtainOff);
-
-        CurtainBG.SetActive(true);
         Confetti.SetActive(false);
 
         dialogueRunner.AddCommandHandler("ConfettiAnim", ConfettiAnim);
 
         dialogueRunner.AddCommandHandler<string>("MysteryAnim", MysteryAnim);
 
-    }
-
-    private void CurtainOn()
-    {
-        CurtainBG.SetActive(true);
-    }
-
-    private void CurtainOff()
-    {
-        CurtainBG.SetActive(false);
     }
 
     private void ConfettiAnim()

@@ -427,7 +427,7 @@ PrefabInstance:
     - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
       propertyPath: MysterySFX
       value: 
-      objectReference: {fileID: 8300000, guid: 9b18d22022b0fa242bc3ad46a86992bc, type: 3}
+      objectReference: {fileID: 8300000, guid: 8df9b81bc65bcaa4eafd62f32416f78f, type: 3}
     - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
       propertyPath: genericAudioSource
       value: 

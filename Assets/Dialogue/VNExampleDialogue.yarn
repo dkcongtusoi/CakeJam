@@ -92,6 +92,11 @@ position: -57,391
 ---
 <<fadeOut>>
 <<fadeIn>>
+
+<<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
+<<wait  2>>
+<<Move JACK 1.5 0.8 0.4>>
+:test
 //Host says random generic stuff about ingredients chosen
 ===
 title: Mix
@@ -99,18 +104,35 @@ position: -58,540
 ---
 <<fadeOut>>
 <<fadeIn>>
+
+<<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
+<<wait  2>>
+<<Move JACK 1.5 0.8 0.4>>
+:test
+
 ===
 title: Judge
 position: -54,694
 ---
 <<fadeOut>>
 <<fadeIn>>
+
+<<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
+<<wait  2>>
+<<Move JACK 1.5 0.8 0.4>>
+:test
+
 ===
 title: JackCake
 position: -47,840
 ---
 <<fadeOut>>
 <<fadeIn>>
+
+<<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
+<<wait  2>>
+<<Move JACK 1.5 0.8 0.4>>
+:test
 ===
 title: GhostCake
 position: -42,988
