@@ -46,6 +46,13 @@ public class UIManager : MonoBehaviour
 
         dialogueRunner.AddCommandHandler<string>("MysteryAnim", MysteryAnim);
 
+        dialogueRunner.AddCommandHandler<string>("ChangeScene", ChangeScene);
+
+    }
+
+    private void ChangeScene(string sceneName)
+    {
+        GameManager.Instance.ChangeScene(sceneName);
     }
 
     private void ConfettiAnim()
