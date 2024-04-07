@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
     public Animator Mystery;
     public Animator Curtain;
 
+    public GameObject CurtainBG;
+
     public AudioSource genericAudioSource;
     public float SFXVolume = 0.5f;
     public AudioClip ReactSFX;
@@ -37,6 +39,21 @@ public class UIManager : MonoBehaviour
         dialogueRunner.AddCommandHandler<float>("fadeIn", FadeIn);
         dialogueRunner.AddCommandHandler<float>("fadeOut", FadeOut);
 
+        dialogueRunner.AddCommandHandler("CurtainOn", CurtainOn);
+        dialogueRunner.AddCommandHandler("CurtainOff", CurtainOff);
+
+        CurtainBG.SetActive(false);
+
+    }
+
+    private void CurtainOn()
+    {
+        CurtainBG.SetActive(true);
+    }
+
+    private void CurtainOff()
+    {
+        CurtainBG.SetActive(false);
     }
     private void ReactAnim(string trigger)
     {
@@ -74,7 +91,6 @@ public class UIManager : MonoBehaviour
         Debug.Log($"Fading out to black over {time} seconds.");
         return StartCoroutine(fadeLayer.ChangeAlphaOverTime(1, time));
     }
-
 
     void Update()
     {
