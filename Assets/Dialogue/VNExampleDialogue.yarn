@@ -97,7 +97,16 @@ position: -57,391
 ---
 <<PlayAudio BG_Pantry 0.5 loop>> 
 <<fadeIn>>
+<<FadeOff>>
+: Welcome back! Salaryman is about to choose the ingredients that'll either make or break this cake!
+<<DialogueOff>>
 
+===
+
+title: PantryDone
+position: -58,540
+---
+<<ChangeScene Scene4>>
 ===
 title: Mix
 position: -58,540
