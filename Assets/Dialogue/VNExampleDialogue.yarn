@@ -7,7 +7,6 @@ position: -59,-84
 <<fadeOut>>
 //<<Scene  BG_Main>> //to set bg
 <<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
-<<CurtainOff>>
 <<fadeIn>>
 
 <<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
@@ -18,7 +17,6 @@ position: -59,-84
 : WE'LL BE BACK AFTER THIS COMMERCIAL BREAK
 <<CurtAnim Enter>>
 <<wait  2>>
-<<CurtainOn>>
 <<CurtAnim Exit>>
 
 <<BoxAnim Crisis>> 
@@ -49,7 +47,6 @@ position: -54,86
 <<Scene  BG_Main>>
 <<PlayAudio BG_Main 0.5 loop>> 
 <<Act JACK Jack_Sprite 1.5 0.8 >>
-<<CurtainOff>>
 <<fadeIn>>
 
 
@@ -61,7 +58,6 @@ position: -54,86
 title: Mystery
 position: -51,232
 ---
-<<CurtainOn>>
 : Now, contestant 2 will now be choosing his ingredient... What will he get?!
 
 <<MysteryAnim Entry>>
