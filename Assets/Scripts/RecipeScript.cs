@@ -11,37 +11,19 @@ public class RecipeScript : MonoBehaviour
     public int maxEntry = 3;
     public bool enoughItem = false;
 
-    public string[] secretIngredientList;
-    public string secretIngredient;
-
     public Image[] basketItems;
     public int basketEntry = 0;
     public int maxBasket = 3;
 
+    public bool hasRequiredItem;
+    bool hasChecked;
 
-    public string requiredItem;
-    public int price;
-
-    [Header("1st Place Cake")]
-    public string mysteryOne;
-
-    [Header("2nd Place Cake")]
-    public string mysteryTwo;
-
-    [Header("2nd Place Cake")]
-    public string mysteryThree;
-
-    [Header("Last Place Cake")]
-    public string mysteryFour;
-
-    public bool bakeSuccesful;
-    bool hasBaked;
+    public GameObject checkoutButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        secretIngredient = secretIngredientList[Random.Range(0, secretIngredientList.Length)];
-        GetCakeRecipe();
+      
     }
 
     // Update is called once per frame
@@ -51,24 +33,30 @@ public class RecipeScript : MonoBehaviour
         {
             enoughItem = true;            
         }
-
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            BakeCake();
-        }
         
-        if (hasBaked)
+        //if (hasChecked)
+        //{
+        //    if (!hasRequiredItem)
+        //    {
+        //        GameManager.Instance.price = 4;
+        //        Debug.Log("Uh oh, you burnt the cake!");
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("Congratz, you won " + GameManager.Instance.price + " price");
+        //    }
+        //}
+
+        if (ingredientEntry == maxEntry && !hasChecked)
         {
-            if (!bakeSuccesful)
-            {
-                price = 4;
-                Debug.Log("Uh oh, you burnt the cake!");
-            }
-            else
-            {
-                Debug.Log("Congratz, you won " + price + " price");
-            }
+            CheckRequirement();
         }
+
+        if (enoughItem)
+        {
+            checkoutButton.SetActive(true);
+        }
+
     }
 
     public void AddToRecipe(string ingredient)
@@ -98,50 +86,26 @@ public class RecipeScript : MonoBehaviour
         }
     }
 
-    void GetCakeRecipe()
-    {
-        switch (secretIngredient)
-        {
-            case var value when value == mysteryOne:
-                requiredItem = "egg";
-                price = 3;
-
-                break;
-            case var value when value == mysteryTwo:
-                requiredItem = "saliva";
-                price = 2;
- 
-                break;
-            case var value when value == mysteryThree:
-                requiredItem = "cheese";
-                price = 2;
-
-                break;
-            case var value when value == mysteryFour:
-                requiredItem = "tears";
-                price = 1;
-
-                break;
-            default:
-                Debug.Log(".");
-                break;
-        }
-    }
-
-    void BakeCake()
+    void CheckRequirement()
     {
         foreach (var item in ingredientName)
         {
-            if (!bakeSuccesful)
+            if (!hasRequiredItem)
             {
-                if (item == requiredItem)
+                if (item == GameManager.Instance.requiredItem)
                 {
-                    bakeSuccesful = true;
-                    Debug.Log("baked");
+                    hasRequiredItem = true;
+                    GameManager.Instance.hasRequiredItem = true;
+                    Debug.Log("got the correct item");
                     break;
                 }
             }
         }
-        hasBaked = true;
+        hasChecked = true;
+    }
+
+    public void ChangeScene(string sceneName)
+    {
+        GameManager.Instance.ChangeScene(sceneName);
     }
 }
