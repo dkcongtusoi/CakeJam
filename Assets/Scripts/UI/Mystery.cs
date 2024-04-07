@@ -11,20 +11,20 @@ public class Mystery : MonoBehaviour
     public Animator MysteryUI;
     public Animator MysteryItem;
 
-    private GameManager gameManager;
+    //private GameManager gameManager;
 
     private void Awake()
     {
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
         dialogueRunner.AddCommandHandler("MysteryCombo", MysteryCombo);
 
-        gameManager = GameManager.Instance;
+        //gameManager = GameManager.Instance;
         Debug.Log("Manager Accessed");
     }
 
     private void MysteryCombo()
     {
-        string secretIngredient = gameManager.secretIngredient;
+        string secretIngredient = GameManager.Instance.secretIngredient;
         Debug.Log("Combo Accessed");
 
         Debug.Log("Secret Ingredient: " + secretIngredient);

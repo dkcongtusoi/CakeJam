@@ -7,6 +7,7 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     private DialogueRunner dialogueRunner;
+    [SerializeField]
     private FadeLayer fadeLayer;
 
     public Animator HUD;
