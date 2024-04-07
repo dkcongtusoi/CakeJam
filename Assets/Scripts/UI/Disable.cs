@@ -20,6 +20,7 @@ public class Disable : MonoBehaviour
     {
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
         dialogueRunner.AddCommandHandler("DialogueOff", DialogueOff);
+        dialogueRunner.AddCommandHandler("DialogueOn", DialogueOn);
         dialogueRunner.AddCommandHandler("SpriteOn", SpriteOn);
         dialogueRunner.AddCommandHandler("ReactOff", ReactOff);
         dialogueRunner.AddCommandHandler("ReactOn", ReactOn);
@@ -38,6 +39,10 @@ public class Disable : MonoBehaviour
     private void DialogueOff()
     {
         DialoguePanel.SetActive(false);
+    }
+    private void DialogueOn()
+    {
+        DialoguePanel.SetActive(true);
     }
 
     private void SpriteOn()

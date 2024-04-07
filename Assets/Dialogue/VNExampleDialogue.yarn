@@ -48,7 +48,7 @@ position: -54,86
 <<wait 1>>
 <<ReactAnim Exit>>
 
-: Let's recap the rules for our first time viewers. First our contestants will choose a mystery ingredient form our Jack-In-The-Box.
+: Let's recap the rules for our first time viewers. First our contestants will choose a mystery ingredient from our Jack-In-The-Box.
 : Then they'll be free to choose from our exclusive pantry to create a one of a kind mix!
 
 : All to please Jack the judge. 
@@ -106,12 +106,44 @@ position: -57,391
 title: PantryDone
 position: -58,540
 ---
+<<DialogueOn>>
+<<SpriteOn>>
+<<ReactOn>>
+<<FadeOn>>
+<<Act JACK Jack_Sprite -2 0.8 >> 
+<<wait  1>>
+
+<<StopAudio BG_Pantry>> 
+<<PlayAudio BG_Main 0.5 loop>> 
+<<Move JACK 2 0.8 0.4>>
+
+<<ReactAnim Disgusting>>
+<<wait 1>>
+<<ReactAnim Exit>>
+
+: Now settle down! Those were very...interesting choices! 
+: Let's see how our Salaryman rises to the challenge after this break!
+
+<<fadeOut>>
 <<ChangeScene Scene4>>
 ===
 title: Mix
 position: -58,540
 ---
-:test
+<<fadeOut>>
+<<PlayAudio BG_Main 0.5 loop>> 
+<<Act JACK Jack_Sprite -2 0.8 >>
+<<CurtAnim Exit>>
+<<fadeIn>>
+
+: Annddd we're back in the game! Let's keep the momentum going, so bakers, it's time to whisk away!
+: Faster, faster! like you've never whisked before!
+
+<<ReactAnim Amazing>>
+<<wait 1>>
+<<ReactAnim Exit>>
+
+//after mixing change scene or cake flies down
 ===
 title: Judge
 position: -54,694

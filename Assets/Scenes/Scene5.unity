@@ -1324,6 +1324,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1748183515812967943, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 963
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748183515812967943, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 181
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748183515812967943, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 492
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846963639568736331, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8093628608401065100, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -1372,6 +1388,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8727679927004752397, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 32728ee1dbb2eab4a9d3d1457d2ad8b4, type: 3}
     - target: {fileID: 9111975617025526344, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: startNode
       value: Judge

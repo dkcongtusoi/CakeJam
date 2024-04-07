@@ -20,6 +20,8 @@ public class RecipeScript : MonoBehaviour
 
     public GameObject checkoutButton;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +56,8 @@ public class RecipeScript : MonoBehaviour
 
         if (enoughItem)
         {
-            checkoutButton.SetActive(true);
+  
+            checkoutButton.SetActive(true); 
         }
 
     }

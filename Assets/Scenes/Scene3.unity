@@ -1124,6 +1124,7 @@ GameObject:
   - component: {fileID: 366959954}
   - component: {fileID: 366959953}
   - component: {fileID: 366959952}
+  - component: {fileID: 366959955}
   m_Layer: 0
   m_Name: Checkout
   m_TagString: Untagged
@@ -1195,16 +1196,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1862131256}
-        m_TargetAssemblyTypeName: RecipeScript, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 366959955}
+        m_TargetAssemblyTypeName: YarnInteractable, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Scene4
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &366959953
@@ -1245,6 +1246,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366959950}
   m_CullTransparentMesh: 1
+--- !u!114 &366959955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366959950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcda28c88d6ec5c4d8ecc2e7991cc794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conversationStartNode: PantryDone
 --- !u!1 &378745094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2619,6 +2633,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779290116}
   m_CullTransparentMesh: 1
+--- !u!1 &853884331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 853884333}
+  - component: {fileID: 853884332}
+  m_Layer: 0
+  m_Name: Yarn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &853884332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853884331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcda28c88d6ec5c4d8ecc2e7991cc794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conversationStartNode: PantryDone
+--- !u!4 &853884333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853884331}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 470.1416, y: 306.71643, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &885937102
 GameObject:
   m_ObjectHideFlags: 0
@@ -5377,6 +5436,7 @@ MonoBehaviour:
   maxBasket: 3
   hasRequiredItem: 0
   checkoutButton: {fileID: 366959950}
+  yarnInteractable: {fileID: 853884332}
 --- !u!4 &1862131257
 Transform:
   m_ObjectHideFlags: 0
@@ -6383,8 +6443,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 542, y: 440}
-  m_SizeDelta: {x: 802, y: 134}
+  m_AnchoredPosition: {x: 501, y: 440}
+  m_SizeDelta: {x: 927, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1822311312407721950
 MonoBehaviour:
@@ -7549,7 +7609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b9cf3e90c97b54cb98cba23511d944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startFadedOut: 0
+  startFadedOut: 1
 --- !u!222 &5926576507629695145
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8270,7 +8330,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c61f09f0987a2304b823ec361e8dda55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b963f119fb9e88478dca5bfba7e2ccf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8485,3 +8545,4 @@ SceneRoots:
   - {fileID: 8281129986177134886}
   - {fileID: 1432764135}
   - {fileID: 1097641478}
+  - {fileID: 853884333}
