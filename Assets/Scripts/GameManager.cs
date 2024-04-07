@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
     public string secretIngredient;
     public string requiredItem;
-    public int price;
+    public int prize;
     public bool hasRequiredItem;
 
     private void Update()

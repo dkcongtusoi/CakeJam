@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using UnityEngine;
 
 public class SecretIngredientScript : MonoBehaviour
@@ -9,7 +10,7 @@ public class SecretIngredientScript : MonoBehaviour
     public string secretIngredient;
 
     public string requiredItem;
-    public int price;
+    public int prize;
 
     [Header("1st Place Cake")]
     public string mysteryOne;
@@ -41,23 +42,23 @@ public class SecretIngredientScript : MonoBehaviour
         {
             case var value when value == mysteryOne:
                 requiredItem = "egg";
-                
-                price = 3;
+
+                prize = 3;
 
                 break;
             case var value when value == mysteryTwo:
                 requiredItem = "saliva";
-                price = 2;
+                prize = 2;
 
                 break;
             case var value when value == mysteryThree:
                 requiredItem = "cheese";
-                price = 2;
+                prize = 2;
 
                 break;
             case var value when value == mysteryFour:
                 requiredItem = "tears";
-                price = 1;
+                prize = 1;
 
                 break;
             default:
@@ -65,6 +66,6 @@ public class SecretIngredientScript : MonoBehaviour
         }
         GameManager.Instance.requiredItem = requiredItem;
         GameManager.Instance.secretIngredient = secretIngredient;
-        GameManager.Instance.price = price;
+        GameManager.Instance.prize = prize;
     }
 }
