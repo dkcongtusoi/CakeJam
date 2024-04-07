@@ -92,6 +92,11 @@ position: -57,391
 ---
 <<fadeOut>>
 <<fadeIn>>
+
+<<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
+<<wait  2>>
+<<Move JACK 1.5 0.8 0.4>>
+:test
 //Host says random generic stuff about ingredients chosen
 ===
 title: Mix
