@@ -674,7 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8779ba97c5f0824eafc7207438e4d3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentValue: 0.04
+  currentValue: 0.025
   reduceSpeed: 0.08
   slider: {fileID: 980479391}
 --- !u!114 &980479391
