@@ -13,16 +13,17 @@ public class UIManager : MonoBehaviour
     public Animator Reaction;
     public Animator Mystery;
     public Animator Curtain;
+    public Animator MysteryBox;
 
     public GameObject CurtainBG;
+    public GameObject Confetti;
 
     public AudioSource genericAudioSource;
     public float SFXVolume = 0.5f;
     public AudioClip ReactSFX;
-    public AudioClip MysterySFX;
+
     public AudioClip CurtSFX;
-
-
+    public AudioClip MysterySFX;
 
 
     // Start is called before the first frame update
@@ -42,7 +43,12 @@ public class UIManager : MonoBehaviour
         dialogueRunner.AddCommandHandler("CurtainOn", CurtainOn);
         dialogueRunner.AddCommandHandler("CurtainOff", CurtainOff);
 
-        CurtainBG.SetActive(false);
+        CurtainBG.SetActive(true);
+        Confetti.SetActive(false);
+
+        dialogueRunner.AddCommandHandler("ConfettiAnim", ConfettiAnim);
+
+        dialogueRunner.AddCommandHandler<string>("MysteryAnim", MysteryAnim);
 
     }
 
@@ -55,6 +61,19 @@ public class UIManager : MonoBehaviour
     {
         CurtainBG.SetActive(false);
     }
+
+    private void ConfettiAnim()
+    {
+        Confetti.SetActive(true);
+    }
+
+    private void MysteryAnim(string trigger)
+    {
+        MysteryBox.SetTrigger(trigger);
+        genericAudioSource.clip = MysterySFX;
+        genericAudioSource.volume = SFXVolume;
+        genericAudioSource.Play();
+    }
     private void ReactAnim(string trigger)
     {
         Reaction.SetTrigger(trigger);
@@ -66,9 +85,6 @@ public class UIManager : MonoBehaviour
     private void BoxAnim(string trigger)
     {
         Mystery.SetTrigger(trigger);
-        genericAudioSource.clip = MysterySFX;
-        genericAudioSource.volume = SFXVolume;
-        genericAudioSource.Play();
     }
 
     private void CurtAnim(string trigger)

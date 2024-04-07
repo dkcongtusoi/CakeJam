@@ -7,6 +7,7 @@ position: -59,-84
 <<fadeOut>>
 //<<Scene  BG_Main>> //to set bg
 <<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<CurtainOff>>
 <<fadeIn>>
 
 <<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
@@ -48,6 +49,7 @@ position: -54,86
 <<Scene  BG_Main>>
 <<PlayAudio BG_Main 0.5 loop>> 
 <<Act JACK Jack_Sprite 1.5 0.8 >>
+<<CurtainOff>>
 <<fadeIn>>
 
 
@@ -59,8 +61,23 @@ position: -54,86
 title: Mystery
 position: -51,232
 ---
-//curtain transition
-: Now contestant number 2 will be going first which ingredient will he get!
+<<CurtainOn>>
+: Now, contestant 2 will now be choosing his ingredient... What will he get?!
+
+<<MysteryAnim Entry>>
+<<wait 12>>
+<<ConfettiAnim>>
+<<wait  1>>
+<<BoxAnim Crisis>> 
+<<wait  1>>
+<<BoxAnim Exit>> 
+
+<<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
+<<wait  1>>
+<<PlayAudio BG_Main 0.5 loop>> 
+<<Move JACK 2 0.8 0.4>>
+:How intriguing I wonder what he can make with this!
+//<<BoxAnim Exit>>
 
 //different comment based on outcome + ui pop up
 //crisis
@@ -69,7 +86,6 @@ position: -51,232
 //souls
 
 //commercial break
-<<fadeOut>>
 ===
 title: Pantry
 position: -57,391
