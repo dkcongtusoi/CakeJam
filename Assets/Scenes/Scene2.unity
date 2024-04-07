@@ -327,7 +327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4966301073858847036, guid: 4e3674bad76954442892be0cf03ca0ae, type: 3}
       propertyPath: looping
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4966301073858847036, guid: 4e3674bad76954442892be0cf03ca0ae, type: 3}
       propertyPath: lengthInSec
