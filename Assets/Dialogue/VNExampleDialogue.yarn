@@ -60,13 +60,7 @@ position: -51,232
 ---
 : Now, contestant 2 will now be choosing his ingredient... What will he get?!
 
-<<MysteryAnim Entry>>
-<<wait 12>>
-<<ConfettiAnim>>
-<<wait  1>>
-<<BoxAnim Crisis>> 
-<<wait  1>>
-<<BoxAnim Exit>> 
+<<Ingredient>>
 
 <<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
 <<wait  1>>

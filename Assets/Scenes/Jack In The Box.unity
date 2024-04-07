@@ -507,17 +507,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secretIngredientList:
-  - existential crisis
-  - souls of the dead
-  - fear
-  - love
-  secretIngredient: 
+  - Crisis
+  - Souls
+  - Fear
+  - Love
   requiredItem: 
-  price: 0
-  mysteryOne: existential crisis
-  mysteryTwo: souls of the dead
-  mysteryThree: fear
-  mysteryFour: love
+  prize: 0
+  mysteryOne: Love
+  mysteryTwo: Souls
+  mysteryThree: Fear
+  mysteryFour: Crisis
 --- !u!1 &2023108984
 GameObject:
   m_ObjectHideFlags: 0

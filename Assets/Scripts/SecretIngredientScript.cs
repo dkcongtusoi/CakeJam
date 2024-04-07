@@ -7,7 +7,7 @@ using UnityEngine;
 public class SecretIngredientScript : MonoBehaviour
 {
     public string[] secretIngredientList;
-    public string secretIngredient;
+    public string secretIngredient { get; private set; } //thea change
 
     public string requiredItem;
     public int prize;
