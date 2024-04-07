@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: material_flatblue
+  m_Name: material_flatmint
   m_Shader: {fileID: -6465566751694194690, guid: b632e64da99c50846b6fdfb8c9bf3faf, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -89,7 +89,7 @@ Material:
     - Vector1_5D0C1169: 1
     - Vector1_6617C103: 0.27
     - Vector1_9E0A62CA: -1.15
-    - Vector1_CFC6845E: 1.34
+    - Vector1_CFC6845E: 0.98
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 0
@@ -122,13 +122,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_33A14A8B: {r: 0.3013083, g: 0.4995495, b: 0.5754717, a: 0}
-    - Color_3F503FEC: {r: 1, g: 1, b: 1, a: 0.23921569}
+    - Color_33A14A8B: {r: 0.3254272, g: 0.6698113, b: 0.5925663, a: 0}
+    - Color_3F503FEC: {r: 0, g: 0, b: 0, a: 0.23921569}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
+    - _SpecularColor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &9051574871082755513
 MonoBehaviour:
