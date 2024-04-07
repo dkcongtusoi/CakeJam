@@ -45,7 +45,7 @@ public class IngredientScript : MonoBehaviour, IPointerEnterHandler, IPointerExi
                     if (Input.GetMouseButtonDown(0))
                     {
                         isSelected = true;
-                        recipeManager.AddToRecipe(item.itemName);
+                        //recipeManager.AddToRecipe(item.itemName);
                     }
                     backgroundImage.color = Color.red;
                 }                

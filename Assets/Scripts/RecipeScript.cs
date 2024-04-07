@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RecipeScript : MonoBehaviour
 {
@@ -12,6 +13,11 @@ public class RecipeScript : MonoBehaviour
 
     public string[] secretIngredientList;
     public string secretIngredient;
+
+    public Image[] basketItems;
+    public int basketEntry = 0;
+    public int maxBasket = 3;
+
 
     public string requiredItem;
     public int price;
@@ -30,6 +36,7 @@ public class RecipeScript : MonoBehaviour
 
     public bool bakeSuccesful;
     bool hasBaked;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +77,24 @@ public class RecipeScript : MonoBehaviour
         {
             ingredientName[ingredientEntry] = ingredient;
             ingredientEntry++;
+        }        
+    }
+
+    public void AddToBasket(Image sprite)
+    {
+        if (basketItems.Count() > 0 && basketEntry < maxBasket)
+        {
+            basketItems[basketEntry].sprite = sprite.sprite;
+            basketItems[basketEntry].SetNativeSize();
+            basketEntry++;
+        }
+    }
+
+    public void DisableButton(Button yourButton)
+    {
+        if (yourButton != null)
+        {
+            yourButton.interactable = false;
         }
     }
 
