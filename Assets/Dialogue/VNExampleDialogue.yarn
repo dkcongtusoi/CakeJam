@@ -73,8 +73,6 @@ position: -51,232
 title: Pantry
 position: -57,391
 ---
-<<fadeOut>>
-<<fadeIn>>
 
 <<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
 <<wait  2>>
@@ -85,8 +83,6 @@ position: -57,391
 title: Mix
 position: -58,540
 ---
-<<fadeOut>>
-<<fadeIn>>
 
 <<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
 <<wait  2>>
@@ -97,8 +93,7 @@ position: -58,540
 title: Judge
 position: -54,694
 ---
-<<fadeOut>>
-<<fadeIn>>
+
 
 <<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
 <<wait  2>>
