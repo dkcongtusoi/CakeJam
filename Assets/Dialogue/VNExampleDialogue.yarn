@@ -5,7 +5,7 @@ position: -59,-84
 ---
 //set scene
 <<fadeOut>>
-<<Scene  BG_Main>> //to set bg
+//<<Scene  BG_Main>> //to set bg
 <<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
 <<fadeIn>>
 
