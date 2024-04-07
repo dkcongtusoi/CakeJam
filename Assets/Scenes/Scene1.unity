@@ -936,6 +936,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5455322419932421107, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5455322419932421107, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: m_margin.w
+      value: -8.020348
+      objectReference: {fileID: 0}
+    - target: {fileID: 5455322419932421107, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: m_margin.y
+      value: -0.8203964
+      objectReference: {fileID: 0}
+    - target: {fileID: 5455322419932421107, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 5846963639568736331, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -991,6 +1007,10 @@ PrefabInstance:
     - target: {fileID: 8281129985640862323, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111975617025526344, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: startNode
+      value: Start
       objectReference: {fileID: 0}
     - target: {fileID: 9220522356930519581, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: m_Name

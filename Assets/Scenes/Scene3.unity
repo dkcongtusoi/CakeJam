@@ -4598,6 +4598,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 786489756280685507, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1880593515866633556, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: loadAudio.Array.data[1]
       value: 
@@ -4608,7 +4612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5846963639568736331, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7307504606428997163, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: m_IsActive

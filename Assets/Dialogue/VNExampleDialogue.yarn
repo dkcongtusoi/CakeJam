@@ -36,14 +36,29 @@ title: Start
 position: -54,86
 ---
 <<fadeOut>>
-<<Scene  BG_Main>>
 <<PlayAudio BG_Main 0.5 loop>> 
-<<Act JACK Jack_Sprite 1.5 0.8 >>
+<<Act JACK Jack_Sprite -2 0.8 >>
 <<fadeIn>>
-: Welcome back to Jack's delicious game show where (add catchy line here). As always, I'm your host Jack 
-: Today we have 3 contestants including the one and only fat teddy 
-//applause
-: explain game concept briefly 
+
+<<Move JACK 1.5 0.8 0.4>>
+: Hellooo bakers, welcome back to the Hungry Jack's! As always, I'm your host Jack!
+: Today we have 3 bakers. Don't be shy, not all of us bite! Say hi to Mary Jane, er...Salary Man and...
+: The one...the only... FAAAT TEDDDDYYYYYY!! The winner of season 28! Give them a round of applause.
+<<ReactAnim ForReal>>
+<<wait 1.5>>
+<<ReactAnim Exit>>
+
+: Let's recap the rules for our first time viewers. First our contestants will choose a mystery ingredient form our Jack-In-The-Box.
+: Then they'll be free to choose from our exclusive pantry to create a one of a kind mix!
+
+: All to please Jack the judge. 
+<<ReactAnim Approve>>
+<<wait 1.5>>
+<<ReactAnim Exit>>
+: Can our bakers gain his favour? There's only one way to find out!
+: READY...STEADY...BAKE OFFFFFFF!!!!
+<<ChangeScene Scene2>>
+
 ===
 title: Mystery
 position: -51,232
