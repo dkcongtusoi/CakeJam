@@ -38,20 +38,32 @@ public class GameManager : MonoBehaviour
     public string requiredItem;
     public int prize;
     public bool hasRequiredItem;
+    bool isInDevMode = false;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (isInDevMode)
         {
-            ChangeScene("Jack In The Box");
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                LoadNextScene();
+            }
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                LoadPreviousScene();
+            }
+
+            //Restart
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(0);
+            }
         }
-        if (Input.GetKeyDown(KeyCode.O))
+        
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.F12))
         {
-            ChangeScene("Scene 03");
-        }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            ChangeScene("Scene 04");
+            isInDevMode = !isInDevMode;
+            Debug.Log("Dev Mode Is Active: " + isInDevMode);
         }
     }
 
@@ -63,5 +75,27 @@ public class GameManager : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void LoadNextScene()
+    {
+        int allScene = SceneManager.sceneCountInBuildSettings;
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        if (currentScene < allScene - 1)
+            SceneManager.LoadScene(currentScene + 1);
+        else
+            print("Its last scene");
+    }
+
+    public void LoadPreviousScene()
+    {
+        int allScene = SceneManager.sceneCountInBuildSettings;
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        if (currentScene > 0)
+            SceneManager.LoadScene(currentScene - 1);
+        else
+            print("Its last scene");
     }
 }

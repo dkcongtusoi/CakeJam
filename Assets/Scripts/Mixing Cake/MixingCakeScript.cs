@@ -9,16 +9,18 @@ public class MixingCakeScript : MonoBehaviour
     public float reduceSpeed;
     public Slider slider;
     bool doneBaking = false;
+    bool gameStarted = false;
     // Start is called before the first frame update
     void Start()
     {
         slider.value = 0.5f;
+        StartCoroutine(StartGame());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!doneBaking)
+        if (!doneBaking && gameStarted)
         {
             if (slider.value >= slider.minValue && slider.value < slider.maxValue)
             {
@@ -36,11 +38,16 @@ public class MixingCakeScript : MonoBehaviour
         }
         
 
-        if (Input.GetKeyDown(KeyCode.Space)) 
+        if (Input.GetKeyDown(KeyCode.Space) && gameStarted) 
         {
             slider.value += currentValue;
         }
 
     }
     
+    IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(5);
+        gameStarted = true;
+    }
 }

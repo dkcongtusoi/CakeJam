@@ -75,6 +75,7 @@ public class RecipeScript : MonoBehaviour
     {
         if (basketItems.Count() > 0 && basketEntry < maxBasket)
         {
+            basketItems[basketEntry].gameObject.SetActive(true);
             basketItems[basketEntry].sprite = sprite.sprite;
             basketItems[basketEntry].SetNativeSize();
             basketEntry++;
