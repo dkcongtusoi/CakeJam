@@ -229,6 +229,7 @@ position: -54,694
 ---
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>> 
+<<JackOn Table>>
 <<fadeIn>>
 : Time for the results 
 <<StopAudio BG_Main>>
@@ -245,6 +246,7 @@ position: -54,694
 ---
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>> 
+<<MouseOn Table>>
 <<fadeIn>>
 : Time for the results 
 <<StopAudio BG_Main>>
@@ -259,6 +261,7 @@ position: -54,694
 ---
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>> 
+<<GhostOn Table>>
 <<fadeIn>>
 : Time for the results 
 <<StopAudio BG_Main>>
@@ -273,6 +276,7 @@ position: -54,694
 ---
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>>
+<<TruckOn Table>>
 <<fadeIn>>
 : Time for the results 
 <<StopAudio BG_Main>>
@@ -280,6 +284,7 @@ position: -54,694
 <<JackBoxAnim Eat>>
 <<wait  7>>
 <<BadEnd>>
+<<ClownBG Enter>>
 : he hates it
 ===
 
@@ -288,6 +293,7 @@ position: -54,694
 ---
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>> 
+<<AshOn Table>>
 <<fadeIn>>
 : Time for the results 
 <<StopAudio BG_Main>>

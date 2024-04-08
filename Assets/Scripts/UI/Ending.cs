@@ -13,16 +13,18 @@ public class Ending : MonoBehaviour
     [SerializeField] private string TruckCakeEnd;
     [SerializeField] private string MouseCakeEnd;
 
-    //public Animator JackCake;
-    //public Animator AshCake;
-    //public Animator GhostCake;
-    //public Animator MouseCake;
-    //public Animator TruckCake;
+    public Animator JackCake;
+    public Animator AshCake;
+    public Animator GhostCake;
+    public Animator MouseCake;
+    public Animator TruckCake;
 
     public Animator JackBox;
 
     public GameObject GoodEnding;
     public GameObject BadEnding;
+
+    public Animator Clown;
 
     //private GameManager gameManager;
 
@@ -39,15 +41,16 @@ public class Ending : MonoBehaviour
 
 
         dialogueRunner.AddCommandHandler<string>("JackBoxAnim", JackBoxAnim);
-        //dialogueRunner.AddCommandHandler<string>("JackOn", JackOn);
-        //dialogueRunner.AddCommandHandler<string>("AshOn", AshOn);
-        //dialogueRunner.AddCommandHandler<string>("MouseOn", MouseOn);
-        //dialogueRunner.AddCommandHandler<string>("GhostOn", GhostOn);
-        //dialogueRunner.AddCommandHandler<string>("TruckOn", TruckOn);
+        dialogueRunner.AddCommandHandler<string>("JackOn", JackOn);
+        dialogueRunner.AddCommandHandler<string>("AshOn", AshOn);
+        dialogueRunner.AddCommandHandler<string>("MouseOn", MouseOn);
+        dialogueRunner.AddCommandHandler<string>("GhostOn", GhostOn);
+        dialogueRunner.AddCommandHandler<string>("TruckOn", TruckOn);
 
         dialogueRunner.AddCommandHandler("GoodEnd", GoodEnd);
         dialogueRunner.AddCommandHandler("BadEnd", BadEnd);
 
+        dialogueRunner.AddCommandHandler<string>("ClownBG", ClownBG);
 
         GoodEnding.SetActive(false);
         BadEnding.SetActive(false);
@@ -61,30 +64,36 @@ public class Ending : MonoBehaviour
     {
         BadEnding.SetActive(true);
     }
-    //private void JackOn(string trigger)
-    //{
-    //    JackCake.SetTrigger(trigger);
-    //}
 
-    //private void AshOn(string trigger)
-    //{
-    //    AshCake.SetTrigger(trigger);
-    //}
+    private void ClownBG(string trigger)
+    {
+        Clown.SetTrigger(trigger);
+    }
 
-    //private void MouseOn(string trigger)
-    //{
-    //    MouseCake.SetTrigger(trigger);
-    //}
+    private void JackOn(string trigger)
+    {
+        JackCake.SetTrigger(trigger);
+    }
 
-    //private void GhostOn(string trigger)
-    //{
-    //    GhostCake.SetTrigger(trigger);
-    //}
+    private void AshOn(string trigger)
+    {
+        AshCake.SetTrigger(trigger);
+    }
 
-    //private void TruckOn(string trigger)
-    //{
-    //    TruckCake.SetTrigger(trigger);
-    //}
+    private void MouseOn(string trigger)
+    {
+        MouseCake.SetTrigger(trigger);
+    }
+
+    private void GhostOn(string trigger)
+    {
+        GhostCake.SetTrigger(trigger);
+    }
+
+    private void TruckOn(string trigger)
+    {
+        TruckCake.SetTrigger(trigger);
+    }
 
 
     private void JackBoxAnim(string trigger)
