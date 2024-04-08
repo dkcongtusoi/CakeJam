@@ -29,20 +29,16 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        
 
-    }
-
-    private void Start()
-    {
-        //dialogueRunner = GameObject.FindGameObjectWithTag("DialogueRunner").GetComponent<DialogueRunner>();
-        //fadeLayer = GameObject.FindGameObjectWithTag("FadeLayer").GetComponent<FadeLayer>();
+        dialogueRunner = GameObject.FindGameObjectWithTag("DialogueRunner").GetComponent<DialogueRunner>();
+        fadeLayer = GameObject.FindGameObjectWithTag("FadeLayer").GetComponent<FadeLayer>();
 
         dialogueRunner.AddCommandHandler<string>("ReactAnim", ReactAnim);
         //dialogueRunner.AddCommandHandler<string>("BoxAnim", BoxAnim);
         dialogueRunner.AddCommandHandler<string>("CurtAnim", CurtAnim);
         dialogueRunner.AddCommandHandler<string>("JackAnim", JackAnim);
 
+        Confetti.SetActive(false);
         //<<fadeIn DURATION>> and <<fadeOut DURATION>>
         dialogueRunner.AddCommandHandler<float>("fadeIn", FadeIn);
         dialogueRunner.AddCommandHandler<float>("fadeOut", FadeOut);
@@ -52,6 +48,11 @@ public class UIManager : MonoBehaviour
         dialogueRunner.AddCommandHandler<string>("MysteryAnim", MysteryAnim);
 
         dialogueRunner.AddCommandHandler<string>("ChangeScene", ChangeScene);
+    }
+
+    private void Start()
+    {
+        
     }
 
     private void ChangeScene(string sceneName)
