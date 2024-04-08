@@ -239,6 +239,8 @@ position: -54,694
 <<GoodEnd>>
 <<PlayAudio SFX_Clap 0.5>> 
 : he loves it!
+<<CurtAnim Enter>>
+<<jump Outro>>
 ===
 
 title: MouseEnd
@@ -254,6 +256,8 @@ position: -54,694
 <<JackBoxAnim Eat>>
 <<wait  7>>
 : good job
+<<CurtAnim Enter>>
+<<jump Outro>>
 ===
 
 title: GhostEnd
@@ -269,6 +273,8 @@ position: -54,694
 <<JackBoxAnim Eat>>
 <<wait  7>>
 : good job
+<<CurtAnim Enter>>
+<<jump Outro>>
 ===
 
 title: TruckEnd
@@ -286,6 +292,8 @@ position: -54,694
 <<BadEnd>>
 <<ClownBG Enter>>
 : he hates it
+<<CurtAnim Enter>>
+<<jump Outro>>
 ===
 
 title: AshEnd
@@ -301,6 +309,13 @@ position: -54,694
 <<JackBoxAnim Eat>>
 <<wait  7>>
 : you're disqualified 
+<<CurtAnim Enter>>
+<<jump Outro>>
 ===
 
-
+title: Outro
+position: -54,694
+---
+<<PlayAudio BG_Outro 0.5 loop>> 
+<<OutroText Enter>>
+===

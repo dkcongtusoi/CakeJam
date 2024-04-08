@@ -144,7 +144,23 @@ PrefabInstance:
       value: 421
       objectReference: {fileID: 0}
     - target: {fileID: 1880593515866633556, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: loadAudio.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880593515866633556, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: loadAudio.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: d6dc9a5c91d5743498951479c63dfc4c, type: 3}
+    - target: {fileID: 1880593515866633556, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: loadAudio.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: c73e90ecf013f4d4fb95fe2e55d11a79, type: 3}
+    - target: {fileID: 1880593515866633556, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: loadAudio.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b9f4a87e9283f340ab7de9036cc03c7, type: 3}
+    - target: {fileID: 1880593515866633556, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: loadAudio.Array.data[4]
       value: 
       objectReference: {fileID: 8300000, guid: d6dc9a5c91d5743498951479c63dfc4c, type: 3}
     - target: {fileID: 5846963639568736331, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
@@ -546,6 +562,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &852385907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2336646163659158032, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336646163659158032, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336646163659158032, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336646163659158032, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8754261
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336646163659158032, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.40821788
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336646163659158032, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.23456968
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336646163659158032, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.10938163
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336646163659158032, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336646163659158032, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336646163659158032, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770569086453067283, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
+      propertyPath: m_Name
+      value: Directional Light
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 648de41ecca1eea47af380168631a9bf, type: 3}
 --- !u!1 &861454854
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,8 +832,8 @@ MonoBehaviour:
   GhostCakeEnd: GhostDone
   TruckCakeEnd: TruckDone
   MouseCakeEnd: MouseDone
-  JackCake: {fileID: 0}
-  AshCake: {fileID: 0}
+  JackCake: {fileID: 1759850296}
+  AshCake: {fileID: 2040507334}
   GhostCake: {fileID: 1759850295}
   MouseCake: {fileID: 1759850294}
   TruckCake: {fileID: 1759850293}
@@ -1292,6 +1365,11 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4865721328793627589, guid: ca81acb5556801d49974b4241c84ce90, type: 3}
   m_PrefabInstance: {fileID: 1759850292}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1759850296 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3503314037258175164, guid: ca81acb5556801d49974b4241c84ce90, type: 3}
+  m_PrefabInstance: {fileID: 1759850292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1817311397 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2325122046651665609, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
@@ -1548,6 +1626,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb4ad5445cc8224399b74e08b286156, type: 3}
+--- !u!95 &2040507334 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8497826248092060108, guid: edb4ad5445cc8224399b74e08b286156, type: 3}
+  m_PrefabInstance: {fileID: 2040507333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2062681463
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +1672,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1043036245}
+  - {fileID: 852385907}
   - {fileID: 45696190}
   - {fileID: 1149005928}
   - {fileID: 2062681464}

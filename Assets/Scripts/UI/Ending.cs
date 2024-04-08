@@ -25,6 +25,7 @@ public class Ending : MonoBehaviour
     public GameObject BadEnding;
 
     public Animator Clown;
+    public Animator Outro;
 
     //private GameManager gameManager;
 
@@ -51,6 +52,7 @@ public class Ending : MonoBehaviour
         dialogueRunner.AddCommandHandler("BadEnd", BadEnd);
 
         dialogueRunner.AddCommandHandler<string>("ClownBG", ClownBG);
+        dialogueRunner.AddCommandHandler<string>("OutroText", OutroText);
 
         GoodEnding.SetActive(false);
         BadEnding.SetActive(false);
@@ -68,6 +70,10 @@ public class Ending : MonoBehaviour
     private void ClownBG(string trigger)
     {
         Clown.SetTrigger(trigger);
+    }
+    private void OutroText(string trigger)
+    {
+        Outro.SetTrigger(trigger);
     }
 
     private void JackOn(string trigger)
