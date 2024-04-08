@@ -13,11 +13,12 @@ public class Ending : MonoBehaviour
     [SerializeField] private string TruckCakeEnd;
     [SerializeField] private string MouseCakeEnd;
 
-    public GameObject JackCake;
-    public GameObject AshCake;
-    public GameObject GhostCake;
-    public GameObject MouseCake;
-    public GameObject TruckCake;
+    //public Animator JackCake;
+    //public Animator AshCake;
+    //public Animator GhostCake;
+    //public Animator MouseCake;
+    //public Animator TruckCake;
+
     public Animator JackBox;
 
     public GameObject GoodEnding;
@@ -38,22 +39,16 @@ public class Ending : MonoBehaviour
 
 
         dialogueRunner.AddCommandHandler<string>("JackBoxAnim", JackBoxAnim);
-        dialogueRunner.AddCommandHandler("JackOn", JackOn);
-        dialogueRunner.AddCommandHandler("AshOn", AshOn);
-        dialogueRunner.AddCommandHandler("MouseOn", MouseOn);
-        dialogueRunner.AddCommandHandler("GhostOn", GhostOn);
-        dialogueRunner.AddCommandHandler("TruckOn", TruckOn);
+        //dialogueRunner.AddCommandHandler<string>("JackOn", JackOn);
+        //dialogueRunner.AddCommandHandler<string>("AshOn", AshOn);
+        //dialogueRunner.AddCommandHandler<string>("MouseOn", MouseOn);
+        //dialogueRunner.AddCommandHandler<string>("GhostOn", GhostOn);
+        //dialogueRunner.AddCommandHandler<string>("TruckOn", TruckOn);
 
         dialogueRunner.AddCommandHandler("GoodEnd", GoodEnd);
         dialogueRunner.AddCommandHandler("BadEnd", BadEnd);
 
-        //gameManager = GameManager.Instance;
 
-        JackCake.SetActive(false);
-        AshCake.SetActive(false);
-        GhostCake.SetActive(false);
-        MouseCake.SetActive(false);
-        TruckCake.SetActive(false);
         GoodEnding.SetActive(false);
         BadEnding.SetActive(false);
 
@@ -66,30 +61,30 @@ public class Ending : MonoBehaviour
     {
         BadEnding.SetActive(true);
     }
-    private void JackOn()
-    {
-        JackCake.SetActive(true);
-    }
+    //private void JackOn(string trigger)
+    //{
+    //    JackCake.SetTrigger(trigger);
+    //}
 
-    private void AshOn()
-    {
-        AshCake.SetActive(true);
-    }
+    //private void AshOn(string trigger)
+    //{
+    //    AshCake.SetTrigger(trigger);
+    //}
 
-    private void MouseOn()
-    {
-        MouseCake.SetActive(true);
-    }
+    //private void MouseOn(string trigger)
+    //{
+    //    MouseCake.SetTrigger(trigger);
+    //}
 
-    private void GhostOn()
-    {
-        GhostCake.SetActive(true);
-    }
+    //private void GhostOn(string trigger)
+    //{
+    //    GhostCake.SetTrigger(trigger);
+    //}
 
-    private void TruckOn()
-    {
-        TruckCake.SetActive(true);
-    }
+    //private void TruckOn(string trigger)
+    //{
+    //    TruckCake.SetTrigger(trigger);
+    //}
 
 
     private void JackBoxAnim(string trigger)
@@ -102,10 +97,10 @@ public class Ending : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         if (currentScene.buildIndex == 4) // assuming scene 5 is index 4
         {
-            EndCake();
+            EndResult();
         }
     }
-    private void EndCake()
+    private void EndResult()
     {
         string secretIngredient = GameManager.Instance.secretIngredient;
         bool hasRequiredItem = GameManager.Instance.hasRequiredItem;
@@ -118,7 +113,7 @@ public class Ending : MonoBehaviour
             isCurrentConversation = true;
             dialogueRunner.StartDialogue(JackCakeEnd);
 
-            JackCake.SetActive(true);
+           
 
 
         }
@@ -128,7 +123,7 @@ public class Ending : MonoBehaviour
             isCurrentConversation = true;
             dialogueRunner.StartDialogue(MouseCakeEnd);
             
-            MouseCake.SetActive(true);
+            
         }
         else if (secretIngredient == "Souls" && hasRequiredItem && prize == 2)
         {
@@ -136,7 +131,7 @@ public class Ending : MonoBehaviour
             isCurrentConversation = true;
             dialogueRunner.StartDialogue(GhostCakeEnd); 
             
-            GhostCake.SetActive(true);
+            
         }
         else if (hasRequiredItem && prize == 3)
         {
@@ -145,7 +140,7 @@ public class Ending : MonoBehaviour
             dialogueRunner.StartDialogue(TruckCakeEnd);
 
 
-            TruckCake.SetActive(true);
+            
         }
         else if (hasRequiredItem == false)
         {
@@ -153,7 +148,7 @@ public class Ending : MonoBehaviour
             isCurrentConversation = true;
             dialogueRunner.StartDialogue(AshCakeEnd);
 
-            AshCake.SetActive(true);
+            
         }
 
     }

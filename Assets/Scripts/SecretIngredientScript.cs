@@ -41,9 +41,9 @@ public class SecretIngredientScript : MonoBehaviour
         switch (secretIngredient)
         {
             case var value when value == mysteryOne:
-                requiredItem = "egg";
+                requiredItem = "tears";
 
-                prize = 3;
+                prize = 1;
 
                 break;
             case var value when value == mysteryTwo:
@@ -57,8 +57,8 @@ public class SecretIngredientScript : MonoBehaviour
 
                 break;
             case var value when value == mysteryFour:
-                requiredItem = "tears";
-                prize = 1;
+                requiredItem = "egg";
+                prize = 3;
 
                 break;
             default:

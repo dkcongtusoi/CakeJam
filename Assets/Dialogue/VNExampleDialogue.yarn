@@ -44,6 +44,7 @@ position: -54,86
 : Hellooo bakers, welcome back to the Hungry Jack's! As always, I'm your host Jack!
 : Today we have 3 bakers. Don't be shy, not all of us bite! Say hi to Mary Jane, er...Salaryman and...
 : The one...the only... FAAAT TEDDDDYYYYYY!! The winner of season 28! Give them a round of applause.
+<<PlayAudio SFX_Clap 0.3>> 
 <<JackAnim Wink>>
 <<ReactAnim ForReal>>
 <<wait 1>>
@@ -71,7 +72,7 @@ position: -51,232
 ---
 <<PlayAudio BG_Pantry 0.1 loop>> 
 <<fadeIn>>
-: You just made it in time! It's Salaryman's turn to choose their mystery ingredient, drumroll please...
+: You just made it in time! It's Salaryman's turn to choose their mystery ingredient...
 <<JackAnim Wink>>
 
 <<MysteryAnim Entry>>
@@ -79,6 +80,7 @@ position: -51,232
 <<ConfettiAnim>>
 <<MysteryCombo>>
 
+<<JackAnim Sad>>
 <<Act JACK Jack_Sprite -2 0.8 >> 
 <<wait  1>>
 
@@ -122,6 +124,7 @@ position: -58,540
 <<PlayAudio BG_Main 0.5 loop>> 
 <<Move JACK 2 0.8 0.4>>
 
+<<PlayAudio SFX_Gasp 0.3>> 
 <<ReactAnim Disgusting>>
 <<wait 1>>
 <<ReactAnim Exit>>
@@ -142,20 +145,80 @@ position: -58,540
 <<CurtAnim Exit>>
 <<fadeIn>>
 
-: Annddd we're back in the game! Let's keep the momentum going, so bakers, it's time to whisk away!
+: Annddd we're back in the game! It's the last push so bakers, it's time to whisk away!
 <<JackAnim Angry>>
 : Faster, faster! like you've never whisked before!
 
+<<PlayAudio SFX_Clap 0.3>> 
 <<ReactAnim Amazing>>
 <<wait 1>>
 <<ReactAnim Exit>>
 
+
 //after mixing change scene or cake flies down
 ===
-title: MixDone
+title: JackDone
 position: -54,694
 ---
-:success
+<<JackAnim Wink>>
+: Very well done bakers! Let's get these cakes in the oven 
+
+<<JackOn Up>>
+<<wait 1>>
+: filler
+
+<<fadeOut>>
+<<ChangeScene Scene5>>
+===
+title: GhostDone
+position: -54,694
+---
+<<JackAnim Wink>>
+: Very well done bakers! Let's get these cakes in the oven 
+
+<<GhostOn Up>>
+<<wait 1>>
+: filler
+<<fadeOut>>
+<<ChangeScene Scene5>>
+===
+title: MouseDone
+position: -54,694
+---
+<<JackAnim Wink>>
+: Very well done bakers! Let's get these cakes in the oven 
+
+<<MouseOn Up>>
+<<wait 1>>
+: filler
+
+<<fadeOut>>
+<<ChangeScene Scene5>>
+===
+title: TruckDone
+position: -54,694
+---
+<<JackAnim Wink>>
+: Very well done bakers! Let's get these cakes in the oven 
+
+<<TruckOn Up>>
+<<wait 1>>
+: filler
+
+<<fadeOut>>
+<<ChangeScene Scene5>>
+===
+title: AshDone
+position: -54,694
+---
+<<JackAnim Wink>>
+: Very well done bakers! Let's get these cakes in the oven 
+
+<<AshOn Up>>
+<<wait 1>>
+<<PlayAudio SFX_Baby 0.3>> 
+: filler
+
 <<fadeOut>>
 <<ChangeScene Scene5>>
 ===
@@ -165,62 +228,73 @@ title: JackEnd
 position: -54,694
 ---
 <<fadeOut>>
-//<<Scene  BG_Main>> //to set bg
-<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<PlayAudio BG_Main 0.5 loop>> 
 <<fadeIn>>
 : Time for the results 
+<<StopAudio BG_Main>>
+<<PlayAudio SFX_Jack 0.5>> 
 <<JackBoxAnim Eat>>
-<<JackOn>>
+<<wait  7>>
 <<GoodEnd>>
+<<PlayAudio SFX_Clap 0.5>> 
+: he loves it!
 ===
 
 title: MouseEnd
 position: -54,694
 ---
 <<fadeOut>>
-//<<Scene  BG_Main>> //to set bg
-<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<PlayAudio BG_Main 0.5 loop>> 
 <<fadeIn>>
 : Time for the results 
+<<StopAudio BG_Main>>
+<<PlayAudio SFX_Second 0.5>> 
 <<JackBoxAnim Eat>>
-<<MouseOn>>
+<<wait  7>>
+: good job
 ===
 
 title: GhostEnd
 position: -54,694
 ---
 <<fadeOut>>
-//<<Scene  BG_Main>> //to set bg
-<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<PlayAudio BG_Main 0.5 loop>> 
 <<fadeIn>>
 : Time for the results 
+<<StopAudio BG_Main>>
+<<PlayAudio SFX_Second 0.5>> 
 <<JackBoxAnim Eat>>
-<<GhostOn>>
+<<wait  7>>
+: good job
 ===
 
 title: TruckEnd
 position: -54,694
 ---
 <<fadeOut>>
-//<<Scene  BG_Main>> //to set bg
-<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<PlayAudio BG_Main 0.5 loop>>
 <<fadeIn>>
 : Time for the results 
+<<StopAudio BG_Main>>
+<<PlayAudio SFX_Ash 0.5>> 
 <<JackBoxAnim Eat>>
-<<TruckOn>>
+<<wait  7>>
 <<BadEnd>>
+: he hates it
 ===
 
 title: AshEnd
 position: -54,694
 ---
 <<fadeOut>>
-//<<Scene  BG_Main>> //to set bg
-<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<PlayAudio BG_Main 0.5 loop>> 
 <<fadeIn>>
 : Time for the results 
+<<StopAudio BG_Main>>
+<<PlayAudio SFX_Ash 0.5>> 
 <<JackBoxAnim Eat>>
-<<AshOn>>
+<<wait  7>>
+: you're disqualified 
 ===
 
 
