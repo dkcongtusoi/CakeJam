@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private FadeLayer fadeLayer;
 
-    public Animator HUD;
+    public Animator Jack;
     public Animator Reaction;
     //public Animator Mystery;
     public Animator Curtain;
@@ -35,6 +35,7 @@ public class UIManager : MonoBehaviour
         dialogueRunner.AddCommandHandler<string>("ReactAnim", ReactAnim);
         //dialogueRunner.AddCommandHandler<string>("BoxAnim", BoxAnim);
         dialogueRunner.AddCommandHandler<string>("CurtAnim", CurtAnim);
+        dialogueRunner.AddCommandHandler<string>("JackAnim", JackAnim);
 
         //<<fadeIn DURATION>> and <<fadeOut DURATION>>
         dialogueRunner.AddCommandHandler<float>("fadeIn", FadeIn);
@@ -59,7 +60,10 @@ public class UIManager : MonoBehaviour
     {
         Confetti.SetActive(true);
     }
-
+    private void JackAnim(string trigger)
+    {
+        Jack.SetTrigger(trigger);
+    }
     private void MysteryAnim(string trigger)
     {
         MysteryBox.SetTrigger(trigger);

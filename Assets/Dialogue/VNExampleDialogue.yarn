@@ -44,6 +44,7 @@ position: -54,86
 : Hellooo bakers, welcome back to the Hungry Jack's! As always, I'm your host Jack!
 : Today we have 3 bakers. Don't be shy, not all of us bite! Say hi to Mary Jane, er...Salaryman and...
 : The one...the only... FAAAT TEDDDDYYYYYY!! The winner of season 28! Give them a round of applause.
+<<JackAnim Wink>>
 <<ReactAnim ForReal>>
 <<wait 1>>
 <<ReactAnim Exit>>
@@ -56,6 +57,7 @@ position: -54,86
 <<wait 1>>
 <<ReactAnim Exit>>
 : Can our bakers gain his favour? There's only one way to find out!
+<<JackAnim Angry>>
 : READY...STEADY...BAKE OFFFFFFF!!!!
 : But first, a message from our sponsors. 
 
@@ -70,6 +72,7 @@ position: -51,232
 <<PlayAudio BG_Pantry 0.1 loop>> 
 <<fadeIn>>
 : You just made it in time! It's Salaryman's turn to choose their mystery ingredient, drumroll please...
+<<JackAnim Wink>>
 
 <<MysteryAnim Entry>>
 <<wait  12>>
@@ -82,12 +85,14 @@ position: -51,232
 <<StopAudio BG_Pantry>> 
 <<PlayAudio BG_Main 0.5 loop>> 
 <<Move JACK 2 0.8 0.4>>
+<<JackAnim Angry>>
 :How intriguing, this is the first time we've seen this in the show!
 <<ReactAnim NoWay>>
 <<wait 1>>
 <<ReactAnim Exit>>
 : I wonder what he can make with this! Well, off to the pantry!
 : Stay tuned and don't go anywhere! We'll be right back after this commercial break.
+<<JackAnim Wink>>
 
 <<fadeOut>>
 <<ChangeScene Scene3>>
@@ -120,8 +125,9 @@ position: -58,540
 <<ReactAnim Disgusting>>
 <<wait 1>>
 <<ReactAnim Exit>>
-
+<<JackAnim Sad>>
 : Now settle down! Those were very...interesting choices! 
+<<JackAnim Wink>>
 : Let's see how our Salaryman rises to the challenge after this break!
 
 <<fadeOut>>
@@ -137,6 +143,7 @@ position: -58,540
 <<fadeIn>>
 
 : Annddd we're back in the game! Let's keep the momentum going, so bakers, it's time to whisk away!
+<<JackAnim Angry>>
 : Faster, faster! like you've never whisked before!
 
 <<ReactAnim Amazing>>
