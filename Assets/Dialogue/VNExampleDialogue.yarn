@@ -159,12 +159,68 @@ position: -54,694
 <<fadeOut>>
 <<ChangeScene Scene5>>
 ===
-title: Judge
+
+
+title: JackEnd
 position: -54,694
 ---
 <<fadeOut>>
 //<<Scene  BG_Main>> //to set bg
 <<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
 <<fadeIn>>
-<<EndCake>>
+: Time for the results 
+<<JackBoxAnim Eat>>
+<<JackOn>>
+<<GoodEnd>>
 ===
+
+title: MouseEnd
+position: -54,694
+---
+<<fadeOut>>
+//<<Scene  BG_Main>> //to set bg
+<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<fadeIn>>
+: Time for the results 
+<<JackBoxAnim Eat>>
+<<MouseOn>>
+===
+
+title: GhostEnd
+position: -54,694
+---
+<<fadeOut>>
+//<<Scene  BG_Main>> //to set bg
+<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<fadeIn>>
+: Time for the results 
+<<JackBoxAnim Eat>>
+<<GhostOn>>
+===
+
+title: TruckEnd
+position: -54,694
+---
+<<fadeOut>>
+//<<Scene  BG_Main>> //to set bg
+<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<fadeIn>>
+: Time for the results 
+<<JackBoxAnim Eat>>
+<<TruckOn>>
+<<BadEnd>>
+===
+
+title: AshEnd
+position: -54,694
+---
+<<fadeOut>>
+//<<Scene  BG_Main>> //to set bg
+<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<fadeIn>>
+: Time for the results 
+<<JackBoxAnim Eat>>
+<<AshOn>>
+===
+
+

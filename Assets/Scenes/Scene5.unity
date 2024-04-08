@@ -1358,12 +1358,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f34bb19c24e5f4d8881485b4a9219d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JackCakeEnd: JackEnd
+  AshCakeEnd: AshEnd
+  GhostCakeEnd: GhostEnd
+  TruckCakeEnd: TruckEnd
+  MouseCakeEnd: MouseEnd
   JackCake: {fileID: 8486788061702258106}
   AshCake: {fileID: 1282869474078971277}
   GhostCake: {fileID: 1350031301974074935}
   MouseCake: {fileID: 8706247090889822657}
   TruckCake: {fileID: 5806574961254157555}
   JackBox: {fileID: 1810144478}
+  GoodEnding: {fileID: 1786587577}
+  BadEnding: {fileID: 434248064}
 --- !u!4 &1828895412
 Transform:
   m_ObjectHideFlags: 0
@@ -1552,7 +1559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1548257606085539293, guid: edb4ad5445cc8224399b74e08b286156, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2177302104529842023, guid: edb4ad5445cc8224399b74e08b286156, type: 3}
       propertyPath: m_LocalScale.x
@@ -1869,6 +1876,10 @@ PrefabInstance:
     - target: {fileID: 9111975617025526344, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: startNode
       value: Judge
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111975617025526344, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+      propertyPath: startAutomatically
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9220522356930519581, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
       propertyPath: m_Name
