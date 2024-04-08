@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4966301073858847036}
   - component: {fileID: 4966301073858847035}
   m_Layer: 0
-  m_Name: ParticleEffect_Confetti
+  m_Name: PE_ConfettiSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
