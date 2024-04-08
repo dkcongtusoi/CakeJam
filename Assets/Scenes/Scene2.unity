@@ -507,6 +507,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
+      propertyPath: Jack
+      value: 
+      objectReference: {fileID: 1651335357}
+    - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
       propertyPath: Curtain
       value: 
       objectReference: {fileID: 8828838633141267633}
@@ -889,6 +893,11 @@ PrefabInstance:
 --- !u!224 &1651335356 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4705392731204743814, guid: 4f5c839d070902940912f4909591e1c3, type: 3}
+  m_PrefabInstance: {fileID: 1651335355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1651335357 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5031607234948595365, guid: 4f5c839d070902940912f4909591e1c3, type: 3}
   m_PrefabInstance: {fileID: 1651335355}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2023108984

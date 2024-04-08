@@ -155,40 +155,5 @@ position: -58,540
 title: Judge
 position: -54,694
 ---
-:test
-===
-title: JackCake
-position: -47,840
----
-<<fadeOut>>
-<<fadeIn>>
-
-<<Act JACK Jack_Sprite -2 0.8 >> // add sprite 
-<<wait  2>>
-<<Move JACK 1.5 0.8 0.4>>
-:test
-===
-title: GhostCake
-position: -42,988
----
-<<fadeOut>>
-<<fadeIn>>
-===
-title: MouseCake
-position: 203,987
----
-<<fadeOut>>
-<<fadeIn>>
-===
-title: TruckCake
-position: -34,1293
----
-<<fadeOut>>
-<<fadeIn>>
-===
-title: BurntCake
-position: -37,1138
----
-<<fadeOut>>
-<<fadeIn>>
+<<EndCake>>
 ===
