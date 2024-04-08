@@ -12,6 +12,7 @@ public class Ending : MonoBehaviour
     [SerializeField] private string GhostCakeEnd;
     [SerializeField] private string TruckCakeEnd;
     [SerializeField] private string MouseCakeEnd;
+    [SerializeField] private GameObject avatars;
 
     public Animator JackCake;
     public Animator AshCake;
@@ -74,6 +75,8 @@ public class Ending : MonoBehaviour
     private void OutroText(string trigger)
     {
         Outro.SetTrigger(trigger);
+        StartCoroutine(ShowAvatars());
+        //avatars.SetActive(true);
     }
 
     private void JackOn(string trigger)
@@ -177,9 +180,10 @@ public class Ending : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator ShowAvatars()
     {
-
+        yield return new WaitForSeconds(1.2f);
+        avatars.SetActive(true);
     }
+
 }
