@@ -5942,9 +5942,9 @@ RectTransform:
   m_Children:
   - {fileID: 1255517227674485778}
   - {fileID: 3416001889944158380}
-  - {fileID: 4423356966705753150}
   - {fileID: 8093628606790936537}
   - {fileID: 1938342153}
+  - {fileID: 4423356966705753150}
   - {fileID: 1653184058554912011}
   - {fileID: 1399678695436355761}
   - {fileID: 972970358}
@@ -6627,6 +6627,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e2ee1f10b6c49ed40aa91b01a6f7d2fa, type: 3}
   - {fileID: 8300000, guid: 9a69295c6425a1844a9a1f14858a0580, type: 3}
   - {fileID: 8300000, guid: c73e90ecf013f4d4fb95fe2e55d11a79, type: 3}
+  - {fileID: 8300000, guid: d6dc9a5c91d5743498951479c63dfc4c, type: 3}
   dialogue: {fileID: 0}
   character: {fileID: 0}
   sprite: {fileID: 0}

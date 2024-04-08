@@ -54,6 +54,7 @@ position: -54,86
 : Then they'll be free to choose from our exclusive pantry to create a one of a kind mix!
 
 : All to please Jack the judge. 
+<<PlayAudio SFX_Clap 0.5>> 
 <<ReactAnim Approve>>
 <<wait 1>>
 <<ReactAnim Exit>>
@@ -89,6 +90,8 @@ position: -51,232
 <<Move JACK 2 0.8 0.4>>
 <<JackAnim Angry>>
 :How intriguing, this is the first time we've seen this in the show!
+<<PlayAudio SFX_Gasp 0.5>> 
+<<wait 0.3>>
 <<ReactAnim NoWay>>
 <<wait 1>>
 <<ReactAnim Exit>>
@@ -125,6 +128,7 @@ position: -58,540
 <<Move JACK 2 0.8 0.4>>
 
 <<PlayAudio SFX_Gasp 0.3>> 
+<<wait 0.3>>
 <<ReactAnim Disgusting>>
 <<wait 1>>
 <<ReactAnim Exit>>
@@ -148,24 +152,35 @@ position: -58,540
 : Annddd we're back in the game! It's the last push so bakers, it's time to whisk away!
 <<JackAnim Angry>>
 : Faster, faster! like you've never whisked before!
-
-<<PlayAudio SFX_Clap 0.3>> 
 <<ReactAnim Amazing>>
 <<wait 1>>
 <<ReactAnim Exit>>
-
-
-//after mixing change scene or cake flies down
+<<JackAnim Wink>>
 ===
 title: JackDone
 position: -54,694
 ---
 <<JackAnim Wink>>
-: Very well done bakers! Let's get these cakes in the oven 
+<<Act JACK Jack_Sprite -2 0.8 >>
+<<Move JACK 2 0.8 0.4>>
+: Very well done bakers! Now we wait...
+: Just kidding! Our Jack patented instant ovens will get them out in no time!
+<<OvenAnim Enter>>
+<<wait  1>>
 
+<<PlayAudio SFX_Oven 0.5>>
 <<JackOn Up>>
 <<wait 1>>
-: filler
+<<SparkleAnim1 Enter>>
+<<wait 1>>
+<<SparkleAnim2 Enter>>
+: My, my, this is spectacular! Incredible! Divine! It's so beautiful that I could cry!
+: Salaryman, you have a great chance of winning Jack's favour!
+<<PlayAudio SFX_Clap 0.5>> 
+<<ReactAnim Approve>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: Stick around because right after this break will be the final judgement!
 
 <<fadeOut>>
 <<ChangeScene Scene5>>
@@ -174,11 +189,27 @@ title: GhostDone
 position: -54,694
 ---
 <<JackAnim Wink>>
-: Very well done bakers! Let's get these cakes in the oven 
+<<Act JACK Jack_Sprite -2 0.8 >>
+<<Move JACK 2 0.8 0.4>>
+: Very well done bakers! Now we wait...
+: Just kidding! Our Jack patented instant ovens will get them out in no time!
+<<OvenAnim Enter>>
+<<wait  1>>
 
+<<PlayAudio SFX_Oven 0.5>>
 <<GhostOn Up>>
 <<wait 1>>
-: filler
+<<SparkleAnim1 Enter>>
+<<wait 1>>
+<<SparkleAnim2 Enter>>
+<<JackAnim Angry>>
+: Hmmm a very interesting design, this reminds me of a game called REAPRIEVE for some reason!
+<<ReactAnim Amazing>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: Anyway, I have no doubt that'll taste just as good!
+: Stick around because right after this break will be the final judgement!
+
 <<fadeOut>>
 <<ChangeScene Scene5>>
 ===
@@ -186,11 +217,26 @@ title: MouseDone
 position: -54,694
 ---
 <<JackAnim Wink>>
-: Very well done bakers! Let's get these cakes in the oven 
+<<Act JACK Jack_Sprite -2 0.8 >>
+<<Move JACK 2 0.8 0.4>>
+: Very well done bakers! Now we wait...
+: Just kidding! Our Jack patented instant ovens will get them out in no time!
+<<OvenAnim Enter>>
+<<wait  1>>
 
+<<PlayAudio SFX_Oven 0.5>>
 <<MouseOn Up>>
 <<wait 1>>
-: filler
+<<SparkleAnim1 Enter>>
+<<wait 1>>
+<<SparkleAnim2 Enter>>
+: How adorable! I almost feel bad that it'll be consumed...
+<<JackAnim Angry>>
+: But consumption by Jack is one of the greatest honours anyone could imagine!
+<<ReactAnim Amazing>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: Stick around because right after this break will be the final judgement!
 
 <<fadeOut>>
 <<ChangeScene Scene5>>
@@ -199,11 +245,29 @@ title: TruckDone
 position: -54,694
 ---
 <<JackAnim Wink>>
-: Very well done bakers! Let's get these cakes in the oven 
+<<Act JACK Jack_Sprite -2 0.8 >>
+<<Move JACK 2 0.8 0.4>>
+: Very well done bakers! Now we wait...
+: Just kidding! Our Jack patented instant ovens will get them out in no time!
+<<OvenAnim Enter>>
+<<wait  1>>
 
+<<PlayAudio SFX_Oven 0.5>>
 <<TruckOn Up>>
 <<wait 1>>
-: filler
+<<SparkleAnim1 Enter>>
+<<wait 1>>
+<<SparkleAnim2 Enter>>
+<<JackAnim Sad>>
+: ...
+: This I don't like at all, not one bit. 
+: It feels very wrong...
+<<PlayAudio SFX_Gasp 0.5>> 
+<<wait 0.3>>
+<<ReactAnim Boo>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: Stick around because right after this break will be the final judgement!
 
 <<fadeOut>>
 <<ChangeScene Scene5>>
@@ -212,12 +276,29 @@ title: AshDone
 position: -54,694
 ---
 <<JackAnim Wink>>
-: Very well done bakers! Let's get these cakes in the oven 
+<<Act JACK Jack_Sprite -2 0.8 >>
+<<Move JACK 2 0.8 0.4>>
+: Very well done bakers! Now we wait...
+: Just kidding! Our Jack patented instant ovens will get them out in no time!
+<<OvenAnim Enter>>
+<<wait  1>>
 
+<<PlayAudio SFX_Oven 0.5>>
 <<AshOn Up>>
 <<wait 1>>
+<<SparkleAnim1 Enter>>
+<<wait 1>>
 <<PlayAudio SFX_Baby 0.3>> 
-: filler
+<<SparkleAnim2 Enter>>
+<<JackAnim Sad>>
+<<PlayAudio SFX_Gasp 0.5>> 
+<<wait 0.3>>
+<<ReactAnim Disgusting>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: ...
+: What is this monstrosity... can you even bake?
+: Er, stick around because right after this break will be the final judgement!
 
 <<fadeOut>>
 <<ChangeScene Scene5>>
@@ -230,15 +311,38 @@ position: -54,694
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>> 
 <<JackOn Table>>
+<<wait 1>>
+<<Act JACK Jack_Sprite -2 0.8 >>
 <<fadeIn>>
-: Time for the results 
+
+<<Move JACK 1.7 0.8 0.4>>
+: Ladies and gentlemen and everyone in between, this is the moment we've all been waiting for!
+<<ReactAnim ForReal>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: Salaryman, you're up! What will Jack's verdict be? Will you win it all or face eternal damnation!
+<<JackAnim Wink>>
+: Jack, it's all yours...
 <<StopAudio BG_Main>>
 <<PlayAudio SFX_Jack 0.5>> 
 <<JackBoxAnim Eat>>
 <<wait  7>>
 <<GoodEnd>>
+: Congratulations salaryman! I never doubted you for a second!
+: Jack loves it and you're through to the next round! 
 <<PlayAudio SFX_Clap 0.5>> 
-: he loves it!
+<<ReactAnim Approve>>
+<<wait 1>>
+<<ReactAnim Exit>>
+<<JackAnim Sad>>
+: Fat teddy, I'm disappointed but it's time to pack your whisks and go home. 
+<<PlayAudio SFX_Gasp 0.5>> 
+<<wait 0.3>>
+<<ReactAnim NoWay>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: That's all the time we have folks, see you next week!
+<<PlayAudio SFX_Clap 0.5>> 
 <<CurtAnim Enter>>
 <<jump Outro>>
 ===
@@ -249,13 +353,33 @@ position: -54,694
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>> 
 <<MouseOn Table>>
+<<wait 1>>
+<<Act JACK Jack_Sprite -2 0.8 >>
 <<fadeIn>>
-: Time for the results 
+
+<<Move JACK 1.7 0.8 0.4>>
+: Ladies and gentlemen and everyone in between, this is the moment we've all been waiting for!
+<<ReactAnim ForReal>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: Salaryman, you're up! What will Jack's verdict be? Will you win it all or face eternal damnation!
+<<JackAnim Wink>>
+: Jack, it's all yours...
+
 <<StopAudio BG_Main>>
 <<PlayAudio SFX_Second 0.5>> 
 <<JackBoxAnim Eat>>
 <<wait  7>>
-: good job
+<<JackAnim Sad>>
+: You did well salaryman, I was rooting for you but Fat teddy's was waaay better. At least you weren't last!
+: Salaryman you just made it through to the next round but Mary Jane, please pack up your whisks and go home.
+<<PlayAudio SFX_Gasp 0.5>> 
+<<wait 0.3>>
+<<ReactAnim Boo>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: That's all the time we have folks, see you next week!
+<<PlayAudio SFX_Clap 0.5>> 
 <<CurtAnim Enter>>
 <<jump Outro>>
 ===
@@ -266,13 +390,33 @@ position: -54,694
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>> 
 <<GhostOn Table>>
+<<wait 1>>
+<<Act JACK Jack_Sprite -2 0.8 >>
 <<fadeIn>>
-: Time for the results 
+
+<<Move JACK 1.7 0.8 0.4>>
+: Ladies and gentlemen and everyone in between, this is the moment we've all been waiting for!
+<<ReactAnim ForReal>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: Salaryman, you're up! What will Jack's verdict be? Will you win it all or face eternal damnation!
+<<JackAnim Wink>>
+: Jack, it's all yours...
+
 <<StopAudio BG_Main>>
 <<PlayAudio SFX_Second 0.5>> 
 <<JackBoxAnim Eat>>
 <<wait  7>>
-: good job
+: You did well salaryman, I was rooting for you but Fat teddy's was waaay better. At least you weren't last!
+<<JackAnim Sad>>
+: Salaryman you just made it through to the next round but Mary Jane, please pack up your whisks and go home.
+<<PlayAudio SFX_Gasp 0.5>> 
+<<wait 0.3>>
+<<ReactAnim Boo>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: That's all the time we have folks, see you next week!
+<<PlayAudio SFX_Clap 0.5>> 
 <<CurtAnim Enter>>
 <<jump Outro>>
 ===
@@ -283,15 +427,36 @@ position: -54,694
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>>
 <<TruckOn Table>>
+<<wait 1>>
+<<Act JACK Jack_Sprite -2 0.8 >>
 <<fadeIn>>
-: Time for the results 
+
+<<Move JACK 1.7 0.8 0.4>>
+: Ladies and gentlemen and everyone in between, this is the moment we've all been waiting for!
+<<JackAnim Wink>>
+<<ReactAnim ForReal>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: Salaryman, you're up! What will Jack's verdict be? Will you win it all or face eternal damnation!
+: Jack, it's all yours...
+
 <<StopAudio BG_Main>>
 <<PlayAudio SFX_Ash 0.5>> 
-<<JackBoxAnim Eat>>
+<<JackBoxAnim Scary>>
 <<wait  7>>
+<<PlayAudio BG_Bad 0.5>> 
 <<BadEnd>>
+<<PlayAudio SFX_Gasp 0.5>> 
+<<wait 0.3>>
+<<ReactAnim NoWay>>
+<<wait 1>>
+<<ReactAnim Exit>>
+<<JackAnim Angry>>
+: what have you done salaryman... you've angered Jack
+: I knew there was something nefarious about that truck...
+: everyone get out now!
 <<ClownBG Enter>>
-: he hates it
+: cu- cut the cameras!!
 <<CurtAnim Enter>>
 <<jump Outro>>
 ===
@@ -302,13 +467,33 @@ position: -54,694
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>> 
 <<AshOn Table>>
+<<wait 1>>
+<<Act JACK Jack_Sprite -2 0.8 >>
 <<fadeIn>>
-: Time for the results 
+
+<<Move JACK 1.7 0.8 0.4>>
+: Ladies and gentlemen and everyone in between, this is the moment we've all been waiting for!
+<<ReactAnim ForReal>>
+<<wait 1>>
+<<ReactAnim Exit>>
+: Salaryman, you're up! What will Jack's verdict be? Will you win it all or face eternal damnation!
+<<JackAnim Wink>>
+: Jack, it's all yours...
+
 <<StopAudio BG_Main>>
 <<PlayAudio SFX_Ash 0.5>> 
-<<JackBoxAnim Eat>>
+<<JackBoxAnim Scary>>
 <<wait  7>>
-: you're disqualified 
+<<PlayAudio SFX_Gasp 0.5>> 
+<<wait 0.3>>
+<<ReactAnim Boo>>
+<<wait 1>>
+<<ReactAnim Exit>>
+<<JackAnim Sad>>
+: I don't think this is even edible... never in our show have we seen such incompetence
+: Please pack up your whisks and go home salaryman.
+: That's all the time we have folks, see you next week!
+<<PlayAudio SFX_Clap 0.5>> 
 <<CurtAnim Enter>>
 <<jump Outro>>
 ===

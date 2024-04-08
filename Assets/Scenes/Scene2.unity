@@ -617,14 +617,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229343838}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.020628536, w: 0.9997872}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1591461361}
   m_Father: {fileID: 1765427171986690}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.364}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 75}
@@ -1138,8 +1138,8 @@ RectTransform:
   - {fileID: 4423356966555479873}
   - {fileID: 8093628606909097126}
   - {fileID: 1653184058445139572}
-  - {fileID: 7946437697749701445}
   - {fileID: 1229343839}
+  - {fileID: 7946437697749701445}
   - {fileID: 5052959754877640282}
   - {fileID: 3208303857280054377}
   - {fileID: 3515297988259483383}
@@ -1825,7 +1825,8 @@ MonoBehaviour:
   loadAudio:
   - {fileID: 8300000, guid: e2ee1f10b6c49ed40aa91b01a6f7d2fa, type: 3}
   - {fileID: 8300000, guid: 9a69295c6425a1844a9a1f14858a0580, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: d6dc9a5c91d5743498951479c63dfc4c, type: 3}
+  - {fileID: 8300000, guid: c73e90ecf013f4d4fb95fe2e55d11a79, type: 3}
   dialogue: {fileID: 0}
   character: {fileID: 0}
   sprite: {fileID: 0}

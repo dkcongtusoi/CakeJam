@@ -17,6 +17,12 @@ public class NextScene : MonoBehaviour
     public Animator MouseCake;
     public Animator TruckCake;
 
+    public Animator Sparkle1;
+    public Animator Sparkle2;
+
+    public Animator Mixing;
+    public Animator Oven;
+
     MixingCakeScript mixingCakeScript;
 
     // internal properties not exposed to editor
@@ -38,7 +44,22 @@ public class NextScene : MonoBehaviour
         dialogueRunner.AddCommandHandler<string>("GhostOn", GhostOn);
         dialogueRunner.AddCommandHandler<string>("TruckOn", TruckOn);
 
+        dialogueRunner.AddCommandHandler<string>("SparkleAnim1", SparkleAnim1);
+        dialogueRunner.AddCommandHandler<string>("SparkleAnim2", SparkleAnim2);
+        dialogueRunner.AddCommandHandler<string>("OvenAnim", OvenAnim);
 
+    }
+    private void OvenAnim(string trigger)
+    {
+        Oven.SetTrigger(trigger);
+    }
+    private void SparkleAnim1(string trigger)
+    {
+        Sparkle1.SetTrigger(trigger);
+    }
+    private void SparkleAnim2(string trigger)
+    {
+        Sparkle2.SetTrigger(trigger);
     }
     private void JackOn(string trigger)
     {
@@ -96,6 +117,7 @@ public class NextScene : MonoBehaviour
                 Debug.Log("The cake is done baking!");
                 if (!dialogueRunner.IsDialogueRunning)
                 {
+                    Mixing.SetTrigger("End"); 
                     EndCake();
                 }
             }

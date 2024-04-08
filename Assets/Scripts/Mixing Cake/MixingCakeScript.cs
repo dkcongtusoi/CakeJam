@@ -34,6 +34,7 @@ public class MixingCakeScript : MonoBehaviour
             {
                 slider.value = slider.maxValue;
                 doneBaking = true;
+                gameObject.SetActive(false);
             }
         }
         
