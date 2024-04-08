@@ -4233,6 +4233,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 160444265}
     - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
+      propertyPath: fadeLayer
+      value: 
+      objectReference: {fileID: 5847503500183742233}
+    - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
+      propertyPath: dialogueRunner
+      value: 
+      objectReference: {fileID: 9111975616488024349}
+    - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
       propertyPath: genericAudioSource
       value: 
       objectReference: {fileID: 2325122047187087260}
@@ -6434,7 +6442,7 @@ GameObject:
   - component: {fileID: 1732260014800949976}
   m_Layer: 0
   m_Name: Dialogue Runner
-  m_TagString: Untagged
+  m_TagString: DialogueRunner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7704,7 +7712,7 @@ GameObject:
   - component: {fileID: 5847503500183742233}
   m_Layer: 0
   m_Name: FadePanel
-  m_TagString: Untagged
+  m_TagString: FadeLayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

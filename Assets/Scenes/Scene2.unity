@@ -285,6 +285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParticleEffect_Confetti
       objectReference: {fileID: 0}
+    - target: {fileID: 4966301073858847033, guid: 4e3674bad76954442892be0cf03ca0ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4966301073858847034, guid: 4e3674bad76954442892be0cf03ca0ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.35
@@ -441,6 +445,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1545472681145827766, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568626707516379550, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1578015692168685691, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.44
@@ -481,9 +493,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 8.913
       objectReference: {fileID: 0}
+    - target: {fileID: 2203047007282091114, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203047007992975787, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2210682776813089473, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
       propertyPath: m_Name
       value: ingredient_box
+      objectReference: {fileID: 0}
+    - target: {fileID: 2210682776813089473, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205899000047093937, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314710563524269655, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418484153461147266, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8828241422086345308, guid: 2900a640e1d125c4b9bab9b6b0ca2e6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -531,6 +571,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 413439203}
     - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
+      propertyPath: fadeLayer
+      value: 
+      objectReference: {fileID: 5847503500299805798}
+    - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
       propertyPath: MysteryBox
       value: 
       objectReference: {fileID: 1537040140}
@@ -538,6 +582,10 @@ PrefabInstance:
       propertyPath: MysterySFX
       value: 
       objectReference: {fileID: 8300000, guid: 8df9b81bc65bcaa4eafd62f32416f78f, type: 3}
+    - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
+      propertyPath: dialogueRunner
+      value: 
+      objectReference: {fileID: 9111975616369732194}
     - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
       propertyPath: genericAudioSource
       value: 
@@ -1633,7 +1681,7 @@ GameObject:
   - component: {fileID: 1732260014680560039}
   m_Layer: 0
   m_Name: Dialogue Runner
-  m_TagString: Untagged
+  m_TagString: DialogueRunner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2903,7 +2951,7 @@ GameObject:
   - component: {fileID: 5847503500299805798}
   m_Layer: 0
   m_Name: FadePanel
-  m_TagString: Untagged
+  m_TagString: FadeLayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -6,9 +6,9 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    private DialogueRunner dialogueRunner;
-    [SerializeField]
-    private FadeLayer fadeLayer;
+    public DialogueRunner dialogueRunner;
+
+    public FadeLayer fadeLayer;
 
     public Animator Jack;
     public Animator Reaction;
@@ -29,8 +29,14 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
-        fadeLayer = FindObjectOfType<FadeLayer>();
+        
+
+    }
+
+    private void Start()
+    {
+        //dialogueRunner = GameObject.FindGameObjectWithTag("DialogueRunner").GetComponent<DialogueRunner>();
+        //fadeLayer = GameObject.FindGameObjectWithTag("FadeLayer").GetComponent<FadeLayer>();
 
         dialogueRunner.AddCommandHandler<string>("ReactAnim", ReactAnim);
         //dialogueRunner.AddCommandHandler<string>("BoxAnim", BoxAnim);
@@ -41,14 +47,11 @@ public class UIManager : MonoBehaviour
         dialogueRunner.AddCommandHandler<float>("fadeIn", FadeIn);
         dialogueRunner.AddCommandHandler<float>("fadeOut", FadeOut);
 
-        Confetti.SetActive(false);
-
         dialogueRunner.AddCommandHandler("ConfettiAnim", ConfettiAnim);
 
         dialogueRunner.AddCommandHandler<string>("MysteryAnim", MysteryAnim);
 
         dialogueRunner.AddCommandHandler<string>("ChangeScene", ChangeScene);
-
     }
 
     private void ChangeScene(string sceneName)

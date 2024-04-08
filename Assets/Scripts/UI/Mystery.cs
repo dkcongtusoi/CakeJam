@@ -15,7 +15,7 @@ public class Mystery : MonoBehaviour
 
     private void Awake()
     {
-        dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
+        dialogueRunner = GameObject.FindGameObjectWithTag("DialogueRunner").GetComponent<DialogueRunner>();
         dialogueRunner.AddCommandHandler("MysteryCombo", MysteryCombo);
 
         //gameManager = GameManager.Instance;

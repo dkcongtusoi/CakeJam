@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: -59,-84
 ---
+<<wait 2>>
 //set scene
 <<fadeOut>>
 //<<Scene  BG_Main>> //to set bg
@@ -35,6 +36,8 @@ position: -59,-84
 title: Start
 position: -54,86
 ---
+
+<<wait 0.5>>
 <<fadeOut>>
 <<PlayAudio BG_Main 0.5 loop>> 
 <<Act JACK Jack_Sprite -2 0.8 >>

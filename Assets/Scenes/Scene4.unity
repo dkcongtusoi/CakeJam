@@ -255,6 +255,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7946437696024097647, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
   m_PrefabInstance: {fileID: 45696190}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &45696192 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5847503500721243212, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+  m_PrefabInstance: {fileID: 45696190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b9cf3e90c97b54cb98cba23511d944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &45696193 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9111975617025526344, guid: 5db2ec9687355cd4b91d153ba9fb8227, type: 3}
+  m_PrefabInstance: {fileID: 45696190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &174714902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1190,14 @@ PrefabInstance:
       propertyPath: CurtainBG
       value: 
       objectReference: {fileID: 174714902}
+    - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
+      propertyPath: fadeLayer
+      value: 
+      objectReference: {fileID: 45696192}
+    - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
+      propertyPath: dialogueRunner
+      value: 
+      objectReference: {fileID: 45696193}
     - target: {fileID: 2087196198292114953, guid: 7646706e9ab222c4f8d8a783a0a6f546, type: 3}
       propertyPath: genericAudioSource
       value: 
