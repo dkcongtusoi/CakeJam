@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
             }
         }
         
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.F12))
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.F12))
         {
             isInDevMode = !isInDevMode;
             Debug.Log("Dev Mode Is Active: " + isInDevMode);
