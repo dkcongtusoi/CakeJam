@@ -8,7 +8,7 @@ public class MixingCakeScript : MonoBehaviour
     public float currentValue;
     public float reduceSpeed;
     public Slider slider;
-    bool doneBaking = false;
+    public bool doneBaking = false;
     bool gameStarted = false;
     // Start is called before the first frame update
     void Start()

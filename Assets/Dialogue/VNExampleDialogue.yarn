@@ -152,6 +152,11 @@ position: -58,540
 
 //after mixing change scene or cake flies down
 ===
+title: MixDone
+position: -54,694
+---
+:success
+===
 title: Judge
 position: -54,694
 ---
