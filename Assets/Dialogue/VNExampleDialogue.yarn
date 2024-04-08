@@ -317,5 +317,6 @@ title: Outro
 position: -54,694
 ---
 <<PlayAudio BG_Outro 0.5 loop>> 
+<<wait  1>>
 <<OutroText Enter>>
 ===
