@@ -57,7 +57,7 @@ public class RecipeScript : MonoBehaviour
         if (enoughItem)
         {
   
-            checkoutButton.SetActive(true); 
+            //checkoutButton.SetActive(true); 
         }
 
     }

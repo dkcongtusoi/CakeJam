@@ -156,9 +156,15 @@ title: MixDone
 position: -54,694
 ---
 :success
+<<fadeOut>>
+<<ChangeScene Scene5>>
 ===
 title: Judge
 position: -54,694
 ---
+<<fadeOut>>
+//<<Scene  BG_Main>> //to set bg
+<<PlayAudio BG_Main 0.5 loop>> //to play and loop audio
+<<fadeIn>>
 <<EndCake>>
 ===
