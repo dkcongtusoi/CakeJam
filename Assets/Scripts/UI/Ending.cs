@@ -182,7 +182,7 @@ public class Ending : MonoBehaviour
 
     IEnumerator ShowAvatars()
     {
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(0.5f);
         avatars.SetActive(true);
     }
 
