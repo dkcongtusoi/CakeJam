@@ -44,7 +44,7 @@ position: -54,86
 <<fadeIn>>
 
 <<Move JACK 1.5 0.8 0.4>>
-: Hellooo bakers, welcome back to the Hungry Jack's! As always, I'm your host Jack!
+: Hellooo bakers, welcome back to the Jack On, Bake Off Season 37 Ep 2! As always, I'm your host Jack!
 : Today we have 3 bakers. Don't be shy, not all of us bite! Say hi to Mary Jane, er...Salaryman and...
 : The one...the only... FAAAT TEDDDDYYYYYY!! The winner of season 28! Give them a round of applause.
 <<PlayAudio SFX_Clap 0.3>> 
